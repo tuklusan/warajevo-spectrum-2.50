@@ -14,3 +14,12 @@ dist/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Copyrighted Spectrum tape images retained locally only
+/tapes/download-temp/
+/tapes/spectrum-48k/*.TAP
+/tapes/spectrum-plus/*.TAP
+/tapes/spectrum-128k/*.TAP
+/tapes/spectrum-128k/*.tap
+/tapes/spectrum-128k/*.TZX
+/tapes/spectrum-128k/*.tzx
