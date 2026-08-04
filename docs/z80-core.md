@@ -52,3 +52,8 @@ must be measured against test suites and hardware behavior, including:
 
 Generate a machine-readable symbol graph and opcode coverage table from all
 three Z80 cores. That should be done by tooling, not by heroic eyeballing.
+
+---
+
+Copyright © 2026 Supratim Sanyal, SANYALnet Labs.  
+Licensed under CC-BY-4.0. See `NOTICE.md`.

@@ -1,27 +1,73 @@
 # Audit Report
 
+## Scope
+
+This audit covers the repository-authored documentation under `docs/`,
+including:
+
+- the Warajevo 2.50 architecture documentation;
+- the personal historical note;
+- the documentation notice and attribution scope;
+- attribution footers;
+- README document indexing;
+- exclusions for upstream, source, and third-party material.
+
 ## Method
 
-Each audit reread the saved Markdown files from disk. Checks covered:
+Each audit rereads the saved Markdown files from disk.
 
-- required document set and headings;
-- UTF-8 decoding and LF line endings;
+Checks include:
+
+- required document presence;
+- valid UTF-8;
+- top-level headings;
 - final newlines;
 - placeholder markers;
-- required source names, hashes, counts, tools, and architecture terms;
-- cross-document references.
+- required architecture terms, archive hashes, and source paths;
+- README completeness;
+- documentation-notice coverage;
+- explicit upstream and third-party exclusions;
+- exactly one attribution footer per covered file;
+- correct footer spacing;
+- preservation of both author names with proper Unicode spelling;
+- clear identification of the historical account as a personal recollection.
 
-A gap would require correction followed by a complete restart from the saved
-disk copy. The final state required two successive zero-gap audits.
+When an audit identifies a gap, the gap must be corrected and the complete
+audit restarted from the saved disk copies.
 
-## Runs
+## Historical audit sequence
 
-- Audit 1: ZERO GAPS
-- Audit 2: ZERO GAPS
+The expanded pre-report audit initially found eleven gaps:
 
-## Result
+- ten files lacked a blank line before their attribution separator;
+- `Samir Ribić` was split across physical lines and therefore failed the exact
+  stored-text check.
 
-**Two successive audits reported zero gaps.**
+Those gaps were corrected. The audit was then restarted from disk.
 
-This is a structural and internal-consistency audit. It does not substitute
-for compiling the historical source or proving every inferred module role.
+## Current result
+
+- Expanded pre-report audit: **ZERO GAPS**
+- Full audit 1: **ZERO GAPS**
+- Full audit 2: **ZERO GAPS**
+
+Two successive full audits, including this report, independently returned zero
+gaps.
+
+## Limitations
+
+This is a documentation, provenance, attribution, and internal-consistency
+audit.
+
+It does not establish:
+
+- a successful historical build;
+- emulator correctness;
+- complete routine-level architectural coverage;
+- ownership or licensing conclusions beyond the evidence recorded in
+  `LICENSING.md` and `NOTICE.md`.
+
+---
+
+Copyright © 2026 Supratim Sanyal, SANYALnet Labs.  
+Licensed under CC-BY-4.0. See `NOTICE.md`.

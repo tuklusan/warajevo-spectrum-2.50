@@ -84,3 +84,8 @@ A responsible reproduction should proceed in this order:
 7. modernize only on a separate branch/directory.
 
 No modern build claim should be made until the historical build is demonstrated.
+
+---
+
+Copyright © 2026 Supratim Sanyal, SANYALnet Labs.  
+Licensed under CC-BY-4.0. See `NOTICE.md`.

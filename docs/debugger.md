@@ -35,3 +35,8 @@ monitor architecture. In particular, the following remain to be documented:
 
 These must be extracted directly from `SPECMON.ASM`, `TSMON.ASM`, and help text
 before being stated as facts.
+
+---
+
+Copyright © 2026 Supratim Sanyal, SANYALnet Labs.  
+Licensed under CC-BY-4.0. See `NOTICE.md`.

@@ -78,3 +78,8 @@ SPECSIM.ASM
 A precise routine-level graph should be generated later by parsing all `public`,
 `extrn`, `call`, and far-call statements. The current document deliberately
 does not pretend that a filename-level graph is a routine-level graph.
+
+---
+
+Copyright © 2026 Supratim Sanyal, SANYALnet Labs.  
+Licensed under CC-BY-4.0. See `NOTICE.md`.

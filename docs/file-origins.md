@@ -43,3 +43,8 @@ artifacts and should remain immutable.
 - `src/`: verbatim extraction;
 - new code: place outside `src/`, or make changes on a clearly identified
   development branch while preserving the archival commit.
+
+---
+
+Copyright © 2026 Supratim Sanyal, SANYALnet Labs.  
+Licensed under CC-BY-4.0. See `NOTICE.md`.

@@ -36,3 +36,8 @@ Tape emulation is timing-sensitive. Future tests should cover:
 - checksum behavior;
 - sound-card/parallel-port paths where applicable;
 - host-speed independence.
+
+---
+
+Copyright © 2026 Supratim Sanyal, SANYALnet Labs.  
+Licensed under CC-BY-4.0. See `NOTICE.md`.

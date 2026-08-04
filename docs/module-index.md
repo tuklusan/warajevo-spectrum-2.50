@@ -80,3 +80,8 @@ The table uses three confidence levels implicitly:
   `public`, or `extrn`.
 - **Strong inference:** obvious from module names and repeated references.
 - **Unresolved:** exact ownership of every routine and every old object file.
+
+---
+
+Copyright © 2026 Supratim Sanyal, SANYALnet Labs.  
+Licensed under CC-BY-4.0. See `NOTICE.md`.

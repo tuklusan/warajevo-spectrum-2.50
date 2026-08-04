@@ -90,3 +90,8 @@ The Timex source tree is parallel but separate.
 - Third-party Pascal units and binary utilities have separate or unclear terms;
   see `LICENSING.md`.
 - This architecture map does not claim a successful reproducible build yet.
+
+---
+
+Copyright © 2026 Supratim Sanyal, SANYALnet Labs.  
+Licensed under CC-BY-4.0. See `NOTICE.md`.

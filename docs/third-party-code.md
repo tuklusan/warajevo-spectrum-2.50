@@ -4,7 +4,7 @@ This inventory is evidence-based, not a legal conclusion.
 
 | File | Observed notice |
 |---|---|
-| `src/environment/CHAIN.PAS` | TurboPower Software 1987; “All rights reserved” |
+| `src/environment/CHAIN.PAS` | TurboPower Software 1987; â€œAll rights reservedâ€ |
 | `src/environment/EDITORS.PAS` | Borland International 1992 |
 | `src/environment/GADGETS.PAS` | Borland International 1990 |
 | `src/environment/HELPFILE.PAS` | Borland International 1990 |
@@ -25,3 +25,8 @@ This inventory is evidence-based, not a legal conclusion.
 5. Keep archival and modernized distributions clearly separated.
 
 See `LICENSING.md` for the fuller licensing evidence.
+
+---
+
+Copyright © 2026 Supratim Sanyal, SANYALnet Labs.  
+Licensed under CC-BY-4.0. See `NOTICE.md`.
