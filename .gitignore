@@ -2,6 +2,8 @@
 build/
 dist/
 *.obj
+!src/**/*.obj
+!src/**/*.OBJ
 *.map
 *.lst
 *.bak

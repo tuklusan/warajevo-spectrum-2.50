@@ -1,0 +1,5049 @@
+.topic NoContext=0
+Use Tab and Shift+Tab to select the topic, then press Enter (or double click
+mouse button to the topic)
+
+ {About WARAJEVO:abzxtools}
+ {Windows:window}
+ {Dialogs:dialog}
+ {Menu options:moptions}
+ {Shortcut keys:hotkeys}
+
+or press Esc to remove this help screen.
+
+Remember that this is only a quick online help, so if you have troubles,
+consult full program documentation!
+
+.topic abzxtools
+  ษอออออออออออออออออออออออออออออออป
+  บ WARAJEVO ZX SPECTRUM EMULATOR บ
+  ศอออออออออออออออออออออออออออออออผ
+
+Warajevo is ZX Spectrum emulator with very high compatibility with existing
+Spectrum software. It was written in Bosnia and Herzegovina by Zeljko Juric and Samir
+Ribic during and after the Bosnian war.
+
+You are now in the environment of Warajevo emulator.
+
+Warajevo emulator can deal with {tape files:Tapefiles},
+{snapshot files:Snapfiles}, {microdrive cartridge files:Cartfiles} and
+Timex {DOCK extension files:dockfiles}.
+
+On the topmost line of the environment screen there is a {main menu:moptions}.
+You can access it using one of the following ways:
+
+- Press Ctrl+F10, then use cursor keys to move through menu;
+
+- Press Alt with a first letter of the menu;
+
+- Move the mouse pointer to the menu name and then click the left button.
+
+The bottommost line of the screen contains a (incomplete) list of
+{shortcut keys:hotkeys}. You can also select them using the mouse. Decimal
+number in the corner is the amount of free RAM.
+
+In the bottom left corner of the screen, there is the {start button:sbutton}.
+
+In the middle of the screen there is a {window} with current file names and
+current parameter settings. If you work with the environment in graphic mode,
+a window with current content of emulated screen is also shown. Double click on
+this window will {run emulator:runemul}.
+
+.topic Tapefiles
+  ษออออออออออออออออออออออป
+  บ TAPE EMULATION FILES บ
+  ศออออออออออออออออออออออผ
+
+Tape files are files used for emulation of Spectrum tapes. They are organized
+as sequence of {blocks} linked into one list. Tape files have the extension
+'.TAP'. You may use also tape files which uses emulator 'Z80' by Gerton Lunter.
+Their format is quite different compared with the native format which Warajevo
+emulator uses, but Warajevo can work with them.
+
+.topic Snapfiles
+  ษออออออออออออออออป
+  บ SNAPSHOT FILES บ
+  ศออออออออออออออออผ
+
+Snapshot files are files that contain Spectrum's memory image, including
+registers and some hardware ports. They have extension '.Z80'.
+
+.topic window
+  ษอออออออออป
+  บ WINDOWS บ
+  ศอออออออออผ
+
+There is a general look of one window:
+
+  {Close icon:clicon}
+    ณ   Title  ฺฤ{Top frame line:topframe}
+    ณ      ณ   ณ   ฺฤฤฤฤฤฤ {Zoom icon:wzoom}
+                
+ ษอ[þ]อออTitleออออ[]อป
+ บ Internal part      บ
+ บ of the window      -
+ บ                    þ
+ บ                    ฑ  {Vertical scrollbar:vscroll}
+ บ                    ฑ         ณ
+ บ                    ฑ ฤฤฤฤฤฤฤู
+ บ                    ฑ
+ บ                    
+ ศอฑฑฑฑฑþฑฑฑฑฑฑฑฑฑฑฤู  ฤฤ{Resize corner:wresize}
+          
+    {Horizontal scrollbar:hscroll}
+
+The window can be without some of these elements.
+
+.topic dialog
+  ษอออออออออป
+  บ DIALOGS บ
+  ศอออออออออผ
+
+Dialogs are special forms of {windows:window}. When you work with dialog, you
+can not access to options from the {main menu:moptions}.
+
+The dialog window usually has many items such as {list boxes:listbox}, the
+{OK button:OKbutton}, {Cancel buttons:Cancelbutton}, {input lines:inputline},
+{radio buttons:radiobutton}, {checkboxes:chkbox}, static text etc.
+
+One of the items is focused and it is active. You can move through items using
+Tab and Shift+Tab keys.
+
+If you have the mouse, you can directly access the items by moving the mouse
+pointer to the desired item and then by pressing the mouse button.
+
+If the item has highlighted the first letter, you can press Alt with this
+letter to reach it.
+
+Selecting the OK button will usually start the desired operation. Selecting of
+the Cancel button or pressing Esc will cancel changes and return us to the
+{main menu:moptions}.
+
+.topic listbox
+  ษอออออออออป
+  บ LISTBOX บ
+  ศอออออออออผ
+
+There is a general look of one list box:
+
+ ......................
+ :  LINE 1            -
+ :  LINE 2            þ
+ :  LINE 3            ฑ  {Vertical scrollbar:vscroll}
+ :  LINE 4            ฑ         ณ
+ :                    ฑ ฤฤฤฤฤฤฤู
+ :                    ฑ
+ :                    
+ :..ฑฑฑฑฑþฑฑฑฑฑฑฑฑ..:
+            
+      {Horizontal scrollbar:hscroll}
+
+List boxes are used for selecting files names, {blocks} in
+{tape files:tapefiles} or for viewing some data. One element is highlighted.
+
+You can move the highlight in list box using arrow keys, PgUp, PgDn, Home, End
+(with usual meaning), Ctrl+PgUp (move to top of the list) and Ctrl+PgEnd (move
+to bottom of the list).
+
+Faster access to any element of the list is pressing mouse button, or using
+scroll bars.
+
+For some commands you must select the highlighted item by pressing Space,
+Enter or by double clicking the mouse.
+
+.topic OKbutton
+ ษอออออออออออป
+ บ OK BUTTON บ
+ ศอออออออออออผ
+
+This is the main button in {dialog}. If you press Enter when it is focused or
+if you click the mouse on it, the operation will start.
+
+.topic CancelButton
+ ษอออออออออออออออป
+ บ CANCEL BUTTON บ
+ ศอออออออออออออออผ
+
+This button will cancel the operation. If you press Enter when it is focused or
+if you click the mouse on it, or press Esc, the operation will not start, and
+usually the {main menu:moptions} will be available.
+
+.topic inputline
+ ษออออออออออออป
+ บ INPUT LINE บ
+ ศออออออออออออผ
+
+Input lines allow entering of text or numerical data.
+
+.topic radiobutton
+ ษอออออออออออออออป
+ บ RADIO BUTTONS บ
+ ศอออออออออออออออผ
+
+Radio buttons are used for selecting one of few possible states.
+
+ ( ) Option 1
+ () Option 2
+ ( ) Option 3
+
+You can select any of these options using arrow keys (or by pressing the Alt
+key with the highlighted letter). Also, you can use mouse instead.
+
+.topic clicon
+ ษออออออออออออป
+ บ CLOSE ICON บ
+ ศออออออออออออผ
+
+Clicking the mouse button to the close icon "[þ]" of the {window} will close
+it. The same effect can be done by using ALT+F4 (like in MS Windows).
+
+.topic topframe
+ ษออออออออออออออออออออออออออออป
+ บ TOP OF FRAME / MOVE WINDOW บ
+ ศออออออออออออออออออออออออออออผ
+
+Pressing the mouse button when the mouse pointer is in this part of the
+{window} will change the frame shape, and while you hold the mouse button, you
+can move the window to new position.
+
+If you have no mouse, you can move the window by pressing Ctrl+F5, then using
+the arrow keys. Press Enter when you finished.
+
+.topic wzoom
+ ษอออออออออออป
+ บ ZOOM ICON บ
+ ศอออออออออออผ
+
+If you press mouse button on Zoom icon "[]", the {window} will be resized to
+the whole screen. Press here again, and the window size will be restored.
+
+The same effect can be done by using Alt+F5 key.
+
+.topic wresize
+ ษอออออออออออออออป
+ บ RESIZE CORNER บ
+ ศอออออออออออออออผ
+
+Pressing the mouse button when the mouse pointer is in this part of the
+{window} will start resizing. While you hold the mouse button, you can move the
+mouse pointer to define the new dimension.
+
+If you have no mouse, you can resize the window pressing Ctrl+F5, then move it
+using shifted arrow keys. Press Enter when finished.
+
+.topic vscroll
+  ษอออออออออออออออออออออป
+  บ VERTICAL SCROLL BAR บ
+  ศอออออออออออออออออออออผ
+
+Vertical scroll bars are used for signing of the position in the {window}
+higher (or lower) than its visible size, and for changing position into window.
+
+ -   Top arrow
+ ฑ   Above pointer
+ ฑ
+ þ   Pointer
+ ฑ   Below pointer
+ ฑ
+    Bottom arrow
+
+Clicking the mouse button on the top and bottom arrows moves the pointer up
+and down respectively. The keys Up and Down have same effect.
+
+Clicking the part of the scroll bar above the pointer will move the pointer
+for one page up, the same as key PgUp. It is similar with part below the
+pointer.
+
+Dragging the pointer using mouse is faster way to move it to desired position.
+
+.topic hscroll
+  ษอออออออออออออออออออออออป
+  บ HORIZONTAL SCROLL BAR บ
+  ศอออออออออออออออออออออออผ
+
+Horizontal scroll bars are used for signing of the position in the {window}
+wider than its visible size, and for changing position into window. They are
+also used to display progress of some long job.
+
+              ฑฑฑฑฑฑฑฑþฑฑฑฑฑฑฑฑ
+                            
+ Left arrow ฤฤู     ณ  ณ    ณ   ณ
+ Left of pointer ฤฤฤู  ณ    ณ   ณ
+ Pointer ฤฤฤฤฤฤฤฤฤฤฤฤฤฤู    ณ   ณ
+ Right of pointer ฤฤฤฤฤฤฤฤฤฤู   ณ
+ Right arrow ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+
+Clicking the mouse button on the left and right arrows moves the pointer left
+and right respectively. The Left and Right keys have same effect.
+
+Clicking on the part of the scroll bar, which is on the left of the pointer,
+moves the pointer for one page left. The same effect does the key combination
+Ctrl+Left. It is similar with the part right of the pointer.
+
+Dragging the pointer using mouse is faster way to move it to desired position.
+
+.topic moptions
+ ษอออออออออออป
+ บ MAIN MENU บ
+ ศอออออออออออผ
+
+You can access main menu options by using one of the following ways:
+
+- Press Ctrl+F10, then use cursor keys to move through menu;
+
+- Press Alt with a first letter of the menu;
+
+- Move the mouse pointer to the menu name and then click the left button.
+
+There are seven submenus: {TapeFiles menu:tfiles},
+{Z80Snaps menu:snapshots}, {MdriveFiles menu:microdrive},
+{DockFiles menu:dockfilesmenu}, {DataBase menu:database}, {Setup menu:setup}
+and {DOS menu:DOS}.
+
+.topic tfiles
+  ษออออออออออออออออป
+  บ TAPEFILES MENU บ
+  ศออออออออออออออออผ
+
+In this menu there are options for manipulations with {tape files:Tapefiles}.
+
+This menu contains the following submenus: {Tapes:ttapes} for
+{selecting:tselect} and {viewing:view} tapes, or setting
+{tape parameters:tparameters}, {Blocks:Blocksmenu} for manipulations with
+{blocks} in tape, {Implode:implode} for compressing and decompressing tapes,
+{Communications:comm} for transfering Spectrum software using {RS232:commrs232}
+or {cassette:commcinf} interface and {Convert:tconvert} for various
+conversions.
+
+.topic ttapes
+  ษอออออออออออออออป
+  บ TAPES SUBMENU บ
+  ศอออออออออออออออผ
+
+In this menu there are options for {selecting:tselect},
+{unselecting:tunselect}, {viewing:view}, {printing:print} the
+{tape files:TapeFiles}, or for {copying files:copynew} from one tape file to
+another.
+
+.topic tselect
+ ษอออออออออออออป
+ บ SELECT TAPE บ
+ ศอออออออออออออผ
+
+Selects the current {tape file:TapeFiles}. All operations in
+{TapeFiles menu:tfiles} will be related to it. If selected tape file does not
+exist, it will be created.
+
+This option calls {file selecting dialog:fsdialog} to select the file name.
+
+.topic tunselect
+ ษอออออออออออออออป
+ บ UNSELECT TAPE บ
+ ศอออออออออออออออผ
+
+Cancels {selection:tselect} of the {tape file:TapeFiles}.
+
+.topic tparameters
+ ษอออออออออออออออออป
+ บ TAPE PARAMETERS บ
+ ศอออออออออออออออออผ
+
+Tape parameters option in {Tapes:ttapes} submenu of {TapeFiles:tfiles} menu
+allows setting various parameters assigned to the selected
+{tape file:TapeFiles}.
+
+This option opens {dialog} with {file selecting dialog:fsdialog} called Tape
+position, {radio buttons:radiobutton} called Loading method, some
+{checkboxes:chkbox}, {input lines:inputline}, {OK button:okbutton}, and
+{Cancel button:cancelbutton}.
+
+Tape position dialog allows selecting of active {block:blocks} in a
+{tape file:TapeFIles}. This block will be active after entering emulator.
+
+Loading method radio buttons selects {tape emulation algorithm:talgs}.
+
+Checkbox 'Stop mode' determines would the emulator stop after every loaded
+block.
+
+Checkbox 'Hide border' is obsolete in release 2.5. (it is still present due to
+compatibility).
+
+Checkbox 'Autostart' determines would the emulator automaticaly load and run
+selected file. If you select autostart, this will {unselect:sunselect} current
+{snapshot file:snapfiles} because automatic loading from tape is uncompatibile
+with snapshots.
+
+Input line 'Initial attribute' determines initial color attribute when you
+using auto start.
+
+Parameters from this dialog will be ignored if MIC/EAR device selected in
+{Sound setting:sound} dialog is not "Tape file".
+
+.topic view
+ ษอออออออออออป
+ บ VIEW TAPE บ
+ ศอออออออออออผ
+
+View the contents of the current {tape file:TapeFiles}.
+
+The {dialog} for viewing contains simple {list box:listbox} with {blocks} of
+the tape file and the {OK button:OKbutton}.
+
+.topic print
+ ษออออออออออออป
+ บ PRINT TAPE บ
+ ศออออออออออออผ
+
+It is possible to list all {blocks} of the {tape file:TapeFIles} to
+{screen:prscr}, {printer:prpri} or {file:prfile}.
+
+.topic prscr
+ ษออออออออออออออออออออออป
+ บ PRINT TAPE TO SCREEN บ
+ ศออออออออออออออออออออออผ
+
+This option will open new {window} on the screen with all properties that one
+window has. The window contains a preview of the document which will be
+printed. If you change the current {tape file:TapeFiles}, the preview window
+will not be automatically updated.
+
+.topic prpri
+ ษอออออออออออออออออออออออป
+ บ PRINT TAPE TO PRINTER บ
+ ศอออออออออออออออออออออออผ
+
+This option lists all {blocks} of the {tape file:TapeFiles} to the printer, in
+two columns, with page breaks.
+
+The {dialog} for selecting print options contains two groups of
+{radio buttons:radiobutton}, {input line:inputline} for manual entering of
+paper size, the {OK button:OKbutton} and the {Cancel button:Cancelbutton}.
+
+The first group of radio buttons is for selecting paper length. There are two
+standard sizes. Use 72 for European 12" continuous paper, or 66 for American
+11" continuous paper. If you select User defined size, you should enter it in
+the input line.
+
+Second group of radio buttons determine the port where the printer is
+connected.
+
+.topic prfile
+ ษออออออออออออออออออออป
+ บ PRINT TAPE TO FILE บ
+ ศออออออออออออออออออออผ
+
+This option lists all {blocks} of the {tape file:TapeFIles} to the textual file
+in two columns with page breaks.
+
+The {dialog} for selecting print options contains one group of
+{radio buttons:radiobutton}, the {input line:inputline} for manual entering of
+paper size, the {OK button:OKbutton} and the {Cancel button:Cancelbutton}.
+
+The group of radio buttons is for selecting paper length. There are two
+standard sizes. Use 72 for European 12" continuous paper, or 66 for American
+11" continuous paper. If you select User defined size, you should enter it in
+the input line.
+
+After you select the OK button you must select output file name using
+{file selecting dialog:fsdialog}.
+
+.topic copynew
+ ษอออออออออออออป
+ บ COPY TO NEW บ
+ ศอออออออออออออผ
+
+This option copies the selected {blocks} of one {tape file:TapeFIles} to
+another.
+
+After you select the destination file using {file selecting dialog:fsdialog}
+you will see on the screen new {dialog}.
+
+The top {list box:listbox} lists the {blocks} of source tape. You can select or
+unselect the blocks using Space, Enter or by double clicking the mouse. The
+selected block will be signed with ''.
+
+The bottom list box lists the blocks of the destination tape file. All selected
+blocks from the source tape file will be stored before the highlighted block in
+the destination tape file (or appended to end of the file if you highlight EOF
+marker). If the destination tape is in {Lunter's format:Tapefiles}, copying is
+possible only on the end of the tape.
+
+You can start coping using the {OK button:OKbutton} or ignore it using the
+{Cancel button:Cancelbutton}.
+
+.topic blocksmenu
+ ษออออออออออออออออป
+ บ BLOCKS SUBMENU บ
+ ศออออออออออออออออผ
+
+This is a menu for manipulating with invididual {blocks} in the
+{tape file:TapeFiles}. The manipulations include: {reordering:reorder} of the
+blocks, {extracting:extract} of blocks to standalone files, {deleting:delete}
+the blocks from the tape file, {adding:add} a standalone file to tape as a new
+block, {editing:edit} the block, {excluding:exclude} the block from the chain
+and {changing the position:chgpos} of the block.
+
+.topic reorder
+ ษอออออออออป
+ บ REORDER บ
+ ศอออออออออผ
+
+This option rewrites all {blocks} of the {tape file:TapeFiles} to the new tape
+file, but in new order.
+
+The {dialog} for defining new order contains the {list box:listbox},
+{OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+The list box for this option is very specific. When you select the block using
+Enter, Space or double clicking the mouse, any further moving of the highlight
+through the list box will move the block too. Pressing the Enter key again will
+park the block to the new location and then you can move next block using the
+same method.
+
+When you define the new order, you can select the OK button. This will create
+backup (BAK) file and new tape (TAP) file. You must have enough space on disk
+for the backup file. If you have no, use {Change position:chgpos} option
+instead.
+
+.topic extract
+ ษอออออออออป
+ บ EXTRACT บ
+ ศอออออออออผ
+
+This option extracts the selected {blocks} to standalone files.
+
+The {dialog} for selecting blocks to be extracted contains the
+{list box:listbox}, group of {radio buttons:radiobutton}, the
+{OK button:OKbutton} and the {Cancel button:Cancelbutton}.
+
+In the list box the you can select/unselect the blocks to be extracted using
+Space, Enter or double clicking the mouse. The selected block will be signed
+with ''.
+
+The radio buttons determine treating of the {flag byte:flagbyte}. It can be the
+first byte in extracted file or file extension. If you want to ignore (throw
+away) the flag byte, the second option is recommended.
+
+The file names of extracted blocks will be derived from their position and name
+of the {tape file:TapeFiles}. All {compressed:implode} blocks will be
+decompressed in the extracted version.
+
+.topic delete
+ ษออออออออป
+ บ DELETE บ
+ ศออออออออผ
+
+This option deletes selected {blocks} from the {tape file:TapeFiles}.
+
+The {dialog} for selecting blocks which will be deleted contains the
+{list box:listbox}, the {Cancel button:Cancelbutton} and the
+{OK button:OKbutton}.
+
+In the list box you can select/unselect the blocks which will be deleted using
+Space, Enter or double clicking the mouse. The selected block will be signed
+with ''.
+
+When you select all blocks, you can select the OK button. This will create
+backup (BAK) file and new tape (TAP) file. You must have enough space on disk
+for the backup file. If you have no, use {Exclude} option instead.
+
+.topic add
+ ษอออออออออออป
+ บ ADD BLOCK บ
+ ศอออออออออออผ
+
+Adds a standalone file from disk and makes it as a new {block:blocks} on the
+{tape file:TapeFiles}.
+
+After you select the block which you want to add using
+{file selecting dialog:fsdialog} you will se on the screen new {dialog}.
+
+The {dialog} for selecting position of the new block contains the
+{list box:listbox}, group of {radio buttons:radiobutton}, the
+{OK button:OKbutton} and the {Cancel button:Cancelbutton}.
+
+The radio buttons determine treating of the {flag byte:flagbyte}. It can be the
+first byte in standalone file or its file extension. If you selected second
+option, nonnumeric file extensions will be assumed as zero.
+
+The list box shows the position of the new created block. The selected file
+will be stored before the highlighted block in the destination tape file (or
+appended to the end of the file if you highlight the EOF marker). If the
+destination tape is in {Lunter's format:Tapefiles}, copying is possible only
+on the end ot the tape.
+
+.topic edit
+ ษออออออออออออป
+ บ EDIT BLOCK บ
+ ศออออออออออออผ
+
+This option edits {block:blocks} on the {tape file:TapeFiles} using
+hexadecimal, decimal or ASCII editor.
+
+The {dialog} for selecting file which will be edited contains the
+{list box:listbox}, the {OK button:OKbutton} and the
+{Cancel button:Cancelbutton}.
+
+When you select OK button, the program will start {Editor dialog:edidiag} for
+editing the block.
+
+Editing of {compressed:implode} blocks is not allowed, because their size
+depend dinamically on data in them.
+
+.topic exclude
+ ษอออออออออป
+ บ EXCLUDE บ
+ ศอออออออออผ
+
+This option excludes {block:blocks} from the chain in the
+{tape file:TapeFiles}.
+
+The {dialog} for selecting the block which will be excluded contains the
+{list box:listbox}, the {OK button:OKbutton} and the
+{Cancel button:Cancelbutton}.
+
+Unlike option {Delete}, this option only tells to pointers in the tape file to
+forget that this block exists, but it still occupies the space in the file. Use
+this option only you have no enough space on disk for the backup file, or if
+option {Delete} will take too much time. Later, excluded blocks can be
+psyhically removed using {Linearize:linonly} option in {Implode} menu, submenu
+{Compress}.
+
+This option works only with tapes in native {Warajevo format:tapefiles}, not
+with tapes in {Lunter's format:tapefiles}.
+
+The selecting of the OK button will exclude the highlighted block from the
+chain.
+
+.topic chgpos
+ ษอออออออออออออออออป
+ บ CHANGE POSITION บ
+ ศอออออออออออออออออผ
+
+Changes position of one {block:blocks} in the {tape file:TapeFIles}.
+
+The {dialog} for selecting block which position will be changed contains the
+{list box:listbox}, the {OK button:OKbutton} and the
+{Cancel button:Cancelbutton}.
+
+The list box for this option is very specific. When you select the block using
+Enter, Space or double mouse clicking, any further moving of the highlight
+through the list box will move the block too.
+
+Unlike {Reorder} option you can move here only one block, but you does not need
+space for the backup file, and the job is much faster if you does not want to
+change position of many blocks. This option reassigns pointers in the chain of
+the tape file.
+
+This option works only with tapes in native {Warajevo format:tapefiles}, not
+with tapes in {Lunter's format:tapefiles}.
+
+The selecting of the OK button will update the look of the chain.
+
+.topic implode
+ ษอออออออออออออออออป
+ บ IMPLODE SUBMENU บ
+ ศอออออออออออออออออผ
+
+Every {block:blocks} on {tape file:TapeFIles}, except {headers:header}, can be
+compressed. The compression reduces the occupied space on the disk for about
+30-60% or even more.
+
+Imploding is feature which is exclusive characteristic of native
+{Warajevo format:tapefiles}, so options from this menu will not work when
+active tape is in {Lunter TAP format:tapefiles}.
+
+This submenu contains options for {compressing:compress},
+{decompressing:decomp} and informing us about {efficiency:eff} of the
+compression.
+
+.topic compress
+ ษออออออออออออออออออป
+ บ COMPRESS SUBMENU บ
+ ศออออออออออออออออออผ
+
+This submenu contains options for {compressing:implode} of the
+{whole tape file:compall}, only {selected blocks:compsel} or
+{linearizing:linonly} the {tape file:TapeFIles}.
+
+{Warajevo emulator:abzxtools} uses the Imploding algorithm, similarly as most
+of archivers (like ZIP and ARJ).
+
+.topic compall
+ ษออออออออออออออป
+ บ COMPRESS ALL บ
+ ศออออออออออออออผ
+
+This option will {compress:implode} all {blocks} in the {tape file:TapeFiles}
+except {headers:header}, already {compressed:implode} blocks and blocks where
+the compression will give worse result.
+
+The original tape file will be copied to the backup (BAK) file. The compression
+is long process, and you can see on the screen two
+{horizontal scroll bars:hscroll} which show progress of compressing.
+
+If you cancel compression using Esc key, the rest of the tape will not be
+compressed. The Esc key is checked only between compression of two blocks, not
+during compression of the one block.
+
+.topic linonly
+ ษอออออออออออป
+ บ LINEARIZE บ
+ ศอออออออออออผ
+
+This option will purge all {excluded:exclude} blocks from the
+{tape file:TapeFiles}, creating backup (BAK) file and new tape (TAP) file.
+
+Use {Effiency:eff} option in {Implode} menu to see did the tape contains
+excluded blocks.
+
+.topic compsel
+ ษอออออออออออออออออออป
+ บ COMPRESS SELECTED บ
+ ศอออออออออออออออออออผ
+
+This option {compresses:implode} selected {blocks} from the
+{tape file:TapeFiles}.
+
+The {dialog} for selecting blocks which will be compressed contains the
+{list box:listbox}, group of {radio buttons:radiobutton} and the
+{OK button:OKbutton}.
+
+In the list box you can select/unselect the blocks which will be compressed
+using Space, Enter or double clicking the mouse. The selected block will be
+signed with ''.
+
+After you select the OK button, the original tape file will be copied to backup
+(BAK) file. The compression is long process, and you can see on the screen two
+{horizontal scroll bars:hscroll} which show progress of compressing.
+
+If you cancel compression using Esc key, the rest of the tape will not be
+compressed. The Esc key is checked only between compression of two blocks, not
+during compression of the one block.
+
+.topic decomp
+ ษออออออออออออป
+ บ DECOMPRESS บ
+ ศออออออออออออผ
+
+This option will decompress all compressed {blocks} in the
+{tape file:TapeFiles}.
+
+The original tape file will be copied to backup (BAK) file. You can see on the
+screen {horizontal scroll bar:hscroll} which shows progress of decompression.
+
+.topic eff
+ ษออออออออออออป
+ บ EFFICIENCY บ
+ ศออออออออออออผ
+
+This option displays four numbers.
+
+The original size is a sum of uncompressed sizes of all {blocks} in the
+{tape file:TapeFiles}.
+
+The compressed size is summ of sizes of all ({compressed:implode} and
+uncompressed) blocks.
+
+The percentile result defines a ratio between compressed and uncompressed
+sizes.
+
+The actual size is actual length of the tape file. It should be equal to
+compressed size. If not, {linearize:linonly} the tape file, because there are
+{excluded:exclude} blocks in it.
+
+.topic comm
+ ษออออออออออออออออออออออออป
+ บ COMMUNICATIONS SUBMENU บ
+ ศออออออออออออออออออออออออผ
+
+This submenu contains options for transferring Spectrum programs using
+{RS232 interface:commrs232} or {tape interface:commcinf}.
+
+.topic commcinf
+ ษออออออออออออออออออออออออออออป
+ บ CASSETTE INTERFACE SUBMENU บ
+ ศออออออออออออออออออออออออออออผ
+
+{Warajevo emulator:abzxtools} can read real Spectrum tapes using simple tape
+interfaces (see the manual) or Sound Blaster sound card. This submenu contains
+options for {transfering:casstransfer} normal Spectrum programs from real tape
+to Warajevo {tape files:TapeFiles}, {sampling:casssample} tone records on real
+tape to Warajevo tape files, and for {advanced settings:advcassetting} of
+transfer parameters.
+
+.topic casstransfer
+ ษอออออออออออออออออออออออป
+ บ RECEIVE FROM CASSETTE บ
+ ศอออออออออออออออออออออออผ
+
+Reads {blocks} from real Spectrum tapes and appends blocks to the end of
+current {tape file:TapeFIles}.
+
+After selecting this option, you can see {dialog} with two {checkbox:chkbox},
+{input line:inputline} for selecting effective {baud rate:baudrate}, group of
+the {radio buttons:radiobutton} for selecting loading device, the
+{OK button:OKbutton} and the {Cancel button:Cancelbutton}.
+
+Checkbox 'Hear loading sound' determines would the program produce sound during
+loading from cassette.
+
+Checkbox 'Tape loading error check' determines would the program check loading
+errors. Disable this option only when it is the only solution.
+
+When you select OK button, you can see on screen loading {window}. Follow
+instructions on screen. If you see 'Tape loading error' message, rewind tape
+and try loading of current block again. If {header} of the program is loaded
+correctly, program name will appear in loading window. If you have EGA or VGA
+graphic card, you will see flashing lines on border during loading, like on
+real Spectrum.
+
+This option allows only transfer of programs which are saved using standard
+tape storage format. For nonstandardly saved programs, use option
+{Sample from cassete:casssample}.
+
+.topic casssample
+ ษอออออออออออออออออออออป
+ บ SAMPLE FROM CASSETE บ
+ ศอออออออออออออออออออออผ
+
+Samples tone record from real Spectrum tapes, convert them into
+{EAR Sample:earsample} blocks and appends such {blocks} to the end of
+current Warajevo {tape file:TapeFIles}. This option is dedicated for
+transfering of Spectrum programs regardless of tape storage format (including
+non-standard saved programs). But, for transfer of normally saved programs,
+option {Receive from cassette:casstransfer} is highly recommended.
+
+This option works only with tape files in native Warajevo format, because
+Lunter TAP files don't support EAR Sample blocks.
+
+After selecting this option, you can see {dialog} with one {checkbox:chkbox},
+two {input lines:inputline}, two groups of the {radio buttons:radiobutton} for
+selecting loading device and sampling frequency, the {OK button:OKbutton} and
+the {Cancel button:Cancelbutton}.
+
+Checkbox 'Loading sound' determines would the program produce sound during
+sampling from cassette.
+
+Sampling from tape needs allocation of huge memory buffers and linear
+addressing of the memory, so 386+ processor with at least 2 Mb of memory is
+required. Input fields 'Lowest linear address' and 'Highest linear address'
+contains start and end address of allocated sampling buffer. You may change
+these values on your own responsibility. Decreasing of start address below
+1114112 are extremely risky. Increasing of end address is usable for sampling
+of very long blocks or during sampling on frequency 44100 Hz. For more
+information, see the manual.
+
+TO PREVENT EVENTUAL CONFLICT WITH DRIVERS WHICH CAN ACCESS MEMORY ABOVE 1 MB +
+64 KB, REMOVE ANY SUCH DRIVERS LIKE QEMM, EMM386, RAMDRIVE, VDISK, SMARTDRV,
+HIMEM, MS WINDOWS ETC. BEFORE USING THIS OPTION!!!
+
+When you select OK button, sampling will start. Since the program does not
+perform any kind of checking of nature of sampled data, no loading errors will
+be noticed using this option. Eventual wrong loading will cause loading error
+only when you try to load a program from created TAP file. The sampling will
+be interrupted when you press on ESC key. After transferring, it is not bad
+idea to exit the environment and reboot the computer.
+
+.topic advcassetting
+ ษออออออออออออออออออออออออออป
+ บ ADVANCED CASSETE SETTING บ
+ ศออออออออออออออออออออออออออผ
+
+This option allows setting of 7 time constants which control
+{loading process:casstransfer}, and changing base address of Sound Blaster
+sound card (typically 512). {Dialog} for this option contains 8
+{input lines:inputline} for entering data, the {OK button:OKbutton} and the
+{Cancel button:Cancelbutton}.
+
+Description of time constants is 'too advanced' so you must look technical part
+of a manual. If you are not familiar with loading routines, do not change these
+constants. However, if you have loading problems, you can try (if you want) to
+change slightly last 3 constants (especially constant named Threshold).
+
+Changing of effective {baud rate:baudrate} will automatically adjust last three
+time constants. First four constants are independent of loading speed.
+
+.topic commrs232
+ ษออออออออออออออออออออออออออออออป
+ บ RS232 COMMUNICATIONS SUBMENU บ
+ ศออออออออออออออออออออออออออออออผ
+
+If you connected Spectrum 128, +2 or +3 and PC using RS232 interface, you can
+use the options in this submenu for {sending:sendtsp} and {receiving:recsp}
+tape {blocks} to and from Spectrum 128. You can also
+{send communication program:sendcprg} to Spectrum 128 and
+{configure RS232:cfgrs232}.
+
+Communications using RS232 is very risky and dangerous when MS Windows is
+active.
+
+.topic sendtsp
+ ษออออออออออออออออออป
+ บ SEND TO SPECTRUM บ
+ ศออออออออออออออออออผ
+
+This option allows you to send {blocks} using {RS232 interface:commrs232} from
+{Warajevo tape file:TapeFiles} to real Spectrum 128. For this purpose you must
+connect two computers using cable and then load the communication program to
+(real) Spectrum using (real) tape recorder. Select option PC to TAPE in the
+communication program.
+
+The {dialog} for selecting blocks to be sent contains the {list box:listbox},
+the {Cancel button:Cancelbutton} and the {OK button:OKbutton}.
+
+In the list box the user can select/unselect the blocks which will be sent to
+Spectrum using Space, Enter or double clicking the mouse. The selected block
+will be signed with ''.
+
+On Spectrum, you can select option 'L' for loading {headers:header} with
+corresponding blocks or 'H' for loading {headerless} blocks.
+
+When you select all blocks, select OK button. The transfer will start.
+
+The PC will show in {horizontal scroll bar:hscroll} which part of the block is
+currently sent. The indicator that communication works good are flashing lines
+on Spectrum BORDER.
+
+If the communication fails, Spectrum will report the error. In this case,
+repeat the transfer.
+
+Sometimes it will be hard for Spectrum to recognize the start of the block. The
+effect will be sound like a machine gun. Press Break/Space on Spectrum and Esc
+on PC and try again. Maybe you will need to leave environment and start it
+again.
+
+When all blocks are sent, press Break/Space on Spectrum, then press S for save
+them to the tape recorder.
+
+.topic recsp
+ ษอออออออออออออออออออออออป
+ บ RECEIVE FROM SPECTRUM บ
+ ศอออออออออออออออออออออออผ
+
+This option allows you to receive {blocks} from Spectrum 128 using the
+{RS232 interface:commrs232} to your PC. For this purpose you must connect two
+computers using cable and then load the communication program to (real)
+Spectrum using a (real) tape recorder. Select option TAPE to the PC in the
+communication program.
+
+You must first load to Spectrum the blocks that you want to receive. You can do
+it using commands L (for blocks with {headers:header}) or H (for {headerless}
+blocks).
+
+When you loaded all the blocks, select this option on the PC and then press S
+on Spectrum. The transfer will start. Transferred blocks will be appended on the
+end of the current {Warajevo tape file:TapeFiles}.
+
+The PC will show in the {horizontal scroll bar:hscroll} which part of the block
+is currently received.
+
+After you received all blocks press ESC on the PC. In case of problems, the PC
+will interrupt the transfer either if block signature was not recognized, or
+appeared error during transfer the block.
+
+.topic sendcprg
+ ษออออออออออออออออออออออออออออป
+ บ SEND COMMUNICATION PROGRAM บ
+ ศออออออออออออออออออออออออออออผ
+
+The communication program stored in file COMM128.BZX will be sent to Spectrum
+128 connected with PC using {RS232:commrs232} if you select this option.
+
+You must type in 128K mode the BASIC program displayed on the screen and wait
+until the transfer finishes. You must only follow instructions on screen.
+
+If the displayed checksum is OK, then erase the BASIC program, type NEW and
+save the communication program.
+
+.topic cfgrs232
+ ษอออออออออออออออออป
+ บ CONFIGURE RS232 บ
+ ศอออออออออออออออออผ
+
+This option selects the communication port and the {baud rate:baudrate}. The
+default values are COM2 and 9600 Bd.
+
+The {dialog} for selecting communication parameters contain two groups of
+{radio buttons:radiobutton}, the {OK button:OKbutton} and the
+{Cancel button:Cancelbutton}.
+
+One group of radio buttons define the port. Another group defines the transfer
+speed.
+
+.topic tconvert
+ ษอออออออออออออออออป
+ บ CONVERT SUBMENU บ
+ ศอออออออออออออออออผ
+
+{Warajevo emulator:abzxtools} has the capability of converting between various
+formats used by many Spectrum and PC commercial programs. It is also possible
+to convert {tape files:TapeFiles} between Warajevo and {another:other} PC
+based Spectrum emulators.
+
+.topic ascbasm
+ ษอออออออออออออออออออออออออออออออออออป
+ บ ASCII TO BASIC AND BASIC TO ASCII บ
+ ศอออออออออออออออออออออออออออออออออออผ
+
+This submenu contains options for converting:
+
+- {PC ASCII file to Spectrum BASIC program:ascbas}
+
+- {Spectrum BASIC program to PC ASCII file:basasc}
+
+The converter includes Beta BASIC 3.0 and Spectrum 128 keywords.
+
+.topic ascbas
+ ษออออออออออออออออป
+ บ ASCII TO BASIC บ
+ ศออออออออออออออออผ
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} to select ASCII file which will be converted.
+
+After you selected the ASCII file, you will see the another {dialog} with one
+{list box:listbox}, {OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+The {dialog} for selecting position of the new {block:blocks} contains also the
+list box, the OK button and the Cancel button.
+
+The list box shows the position of the new created block. The converted file
+will be stored before the highlighted block in the destination
+{tape file:TapeFiles} (or appended to end of the file if you highlight EOF
+marker).
+
+The rules of conversions are:
+
+- The ASCII file must contain line numbers, and program checks if they are
+greater than 9999.
+
+- One BASIC line in ASCII file must take exact one screen line;
+
+- All standard ASCII signs (#32-#127) will be converted.
+
+- After numbers and arguments of DEF FN will be placed numerical
+representations.
+
+- Signs #128-#148 will be converted to UDG signs.
+
+- Signs '','้','Û','Ü','฿','Þ','Ý' will be converted to similar Spectrum
+signs.
+
+- The keywords will be tokenized if they are out of quotes.
+
+- The tokens as 'GO TO' and 'DEF FN' can be entered with or without space.
+
+.topic basasc
+ ษออออออออออออออออป
+ บ BASIC TO ASCII บ
+ ศออออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+{OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+You must place the highlight in the list box to the {header} of BASIC program
+that you want to convert.
+
+When you select OK button, on the screen you will see
+{file selecting dialog:fsdialog} for defining the name of output ASCII file.
+The default name is BASASCII.TXT.
+
+The rules of conversions are:
+
+- All standard ASCII signs will be converted to same PC signs.
+
+- The keyword tokens will be split to ASCII signs.
+
+- Five-byte number definitions will be ignored.
+
+- UDG signs will be converted to signs above #127 if they are quoted, or to
+keywords of Beta Basic if they are not quoted.
+
+- Quoted graphic characters will be converted to PC graphic characters if they
+exist. If graphic character is not quoted, it will be converted to the keyword
+of Beta Basic.
+
+- Pound and copyright will be converted to similar PC signs.
+
+- Color control codes (under #32), if quoted, will be converted to CHR$(nn).
+
+.topic aschis
+ ษอออออออออออออออออออออออออออออออออออออป
+ บ ASCII TO HISOFT AND HISOFT TO ASCII บ
+ ศอออออออออออออออออออออออออออออออออออออผ
+
+This submenu contains options for converting:
+
+- {PC ASCII file to Spectrum GENS program:ascgens}
+
+- {PC ASCII file to Spectrum Pascal program:ascpas}
+
+- {PC ASCII file to Spectrum C program:ascc}
+
+- {Spectrum GENS program to PC ASCII file:gensasc}
+
+- {Spectrum Pascal program to PC ASCII file:pasasc}
+
+- {Spectrum C program to PC ASCII file:casc}
+
+Gens, Pascal and C are compilers written by Hisoft.
+
+.topic ascgens
+ ษอออออออออออออออป
+ บ ASCII TO GENS บ
+ ศอออออออออออออออผ
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} to select the ASCII file to be converted.
+
+After you selected the ASCII file, you will see the another {dialog} with one
+{list box:listbox}, the {OK button:OKbutton} and the
+{Cancel button:Cancelbutton}.
+
+The dialog for selecting position of the new {block:Blocks} contains list box,
+the OK button and the Cancel button.
+
+The list box shows the position of new created block. The converted file will
+be stored before highlighted block in the destination {tape file:TapeFIles}
+(or appended to end of file if you highlight EOF marker).
+
+The rules of conversions are:
+
+- ASCII file must not contain line numbers. Line numbers will be automaticaly
+created as 10, 20, 30 ...
+
+- The labels must be written from the first column.
+
+- The instructions must be indented by one space, or one tabulator.
+
+- All standard ASCII signs will be converted.
+
+.topic ascc
+ ษออออออออออออป
+ บ ASCII TO C บ
+ ศออออออออออออผ
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} to select ASCII file to be converted.
+
+After you selected the ASCII file, you will see the another {dialog} with one
+{list box:listbox}, {OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+The dialog for selecting position of the new {block:blocks} contains list box,
+OK button and Cancel button.
+
+The list box shows the position of new created blocks. The converted file will
+be stored before highlighted block in destination {tape file:TapeFiles} (or
+appended to end of file if you highlight EOF marker).
+
+The rules of conversions are:
+
+- ASCII file must not contain line numbers.
+
+- All standard ASCII signs will be converted.
+
+.topic ascpas
+ ษอออออออออออออออออป
+ บ ASCII TO PASCAL บ
+ ศอออออออออออออออออผ
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} to select the ASCII file to be converted.
+
+After you selected the ASCII file, you will see the another {dialog} with one
+{list box:listbox}, {OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+The dialog for selecting position of the new {block:blocks} contains list box,
+OK button and Cancel button.
+
+The list box shows the position of the new created block. The converted file
+will be stored before highlighted block in the destination
+{tape file:TapeFiles} (or appended to the end of the file if you highlight the
+EOF marker).
+
+The rules of conversions are:
+
+- ASCII file must not contain line numbers. Line numbers will be automatically
+created as 10, 20, 30 ...
+
+- All tokens will be converted.
+
+- All standard ASCII signs will be converted.
+
+.topic gensasc
+ ษอออออออออออออออป
+ บ GENS TO ASCII บ
+ ศอออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+{OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+You must place the highlight in list box to the {header} of assembler program
+that you want to convert.
+
+When you select the OK button, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of output ASCII file. The
+default name is GENSASCI.TXT.
+
+The rules of conversions are:
+
+- All standard ASCII signs (#32-#127) will be converted to same PC signs.
+
+- Line numbers will be ignored.
+
+- The tabulator will be converted to one space.
+
+- Signs above #127 will be ignored.
+
+.topic casc
+ ษออออออออออออป
+ บ C TO ASCII บ
+ ศออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+the {OK button:OKbutton} and the {Cancel button:Cancelbutton}.
+
+You must place the highlight in the list box to the {header} of the C program
+that you want to convert.
+
+When you select the OK button, on the screen you will see
+{file selecting dialog:fsdialog} for defining the name of the output ASCII
+file. The default name is CASCII.TXT.
+
+The rules of conversions are:
+
+- Line numbers will be ignored.
+
+- All standard ASCII signs (#32-#127) will be converted to same PC signs.
+
+- LF (10) will be converted to CR/LF (#13+#10).
+
+- Tokens for '>=', '<=' and '!=' will be decomposed.
+
+- Signs above #127 will be ignored.
+
+Remark that a C program can have more {blocks} with one header.
+
+.topic pasasc
+ ษอออออออออออออออออป
+ บ PASCAL TO ASCII บ
+ ศอออออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+the {OK button:OKbutton} and the {Cancel button:Cancelbutton}.
+
+You must place the highlight in the list box to the {header} of the Pascal
+program that you want to convert. If you convert from version HP4S, you must
+select the second header.
+
+When you select the OK button, on the screen you will see
+{file selecting dialog:fsdialog} for defining the name of the output ASCII
+file. The default name is PASASCII.TXT.
+
+The rules of conversions are:
+
+- Line numbers will be ignored.
+
+- Pascal tokens will be decomposed.
+
+- All standard ASCII signs (#32-#128) will be converted to same PC signs.
+
+- Signs above #128 will be ignored.
+
+.topic asctasw
+ ษอออออออออออออออออออออออออออออออออออออออออป
+ บ ASCII TO TASSWORD AND TASSWORD TO ASCII บ
+ ศอออออออออออออออออออออออออออออออออออออออออผ
+
+This submenu contains option for converting:
+
+- {PC ASCII file to Spectrum Tassword 2 file:tasct2}
+
+- {PC ASCII file to Spectrum Tassword 3 file:tasct3}
+
+- {Spectrum Tassword 2 file to PC ASCII file:tt2asc}
+
+- {Spectrum Tassword 3 file to PC ASCII file:tt3asc}
+
+Tassword is text processor written by Tasman Software.
+
+.topic tt2asc
+ ษอออออออออออออออออออออป
+ บ TASSWORD 2 TO ASCII บ
+ ศอออออออออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+{OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+You must place the highlight in list box to the {header} of Tassword 2 text
+file that you want to convert.
+
+When you select OK button, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of output ASCII file. The
+default name is TSWRDASC.TXT.
+
+The rules of conversions are:
+
+- All standard ASCII signs (#32-#128) will be converted to same PC signs.
+
+- After every 64 signs will be placed new line.
+
+- Signs above #128 will be ignored.
+
+.topic tt3asc
+ ษอออออออออออออออออออออป
+ บ TASSWORD 3 TO ASCII บ
+ ศอออออออออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+{OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+You must place the highlight in the list box to the {header} of Tassword 3 or
+Tassword 128 text file that you want to convert.
+
+When you select OK button, on the screen you will see
+{file selecting dialog:fsdialog} for defining the name of output ASCII file.
+The default name is TSWRDASC.TXT.
+
+The rules of conversions are:
+
+- All standard ASCII signs (#32-#128) will be converted to same PC signs.
+
+- After every 64 signs will be placed new line.
+
+- Signs above #128 will be ignored.
+
+- Null byte will be converted to new line.
+
+.topic tasct2
+ ษอออออออออออออออออออออป
+ บ ASCII TO TASSWORD 2 บ
+ ศอออออออออออออออออออออผ
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} to select ASCII file to be converted.
+
+After you selected the ASCII file, you will see the another {dialog} with one
+{list box:listbox}, {OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+The dialog for selecting position of the new {block:blocks} contains list box,
+OK button and Cancel button.
+
+The list box shows the position of the new created block. The converted file
+will be stored before the highlighted block in destination
+{tape file:TapeFiles} (or appended to end of the file if you highlight the EOF
+marker).
+
+The rules of conversions are:
+
+- New line on PC ASCII file will be new line on Tassword 2 file.
+
+- All standard ASCII signs will be converted.
+
+.topic tasct3
+ ษอออออออออออออออออออออป
+ บ ASCII TO TASSWORD 3 บ
+ ศอออออออออออออออออออออผ
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} to select the ASCII file to be converted.
+
+After you selected the ASCII file, you will see another {dialog} with one
+{list box:listbox}, the {OK button:OKbutton} and the
+{Cancel button:Cancelbutton}.
+
+The dialog for selecting position of the new {block:blocks} contains list box,
+OK button and the Cancel button.
+
+The listbox shows the positon of new created block. The converted file will be
+stored before highlighted block in destination {tape file:TapeFIles} (or
+appended to end of file if you highlight EOF marker).
+
+The rules of conversions are:
+
+- New line on PC ASCII file will be new line on Tassword 3 file.
+
+- All standard ASCII signs will be converted.
+
+- After every 64 signs will be placed line delimiter.
+
+.topic asctlwv
+ ษออออออออออออออออออออออออออออป
+ บ ASCII TO THE LAST WORD AND บ
+ บ THE LAST WORD TO ASCII     บ
+ ศออออออออออออออออออออออออออออผ
+
+This submenu contains options for converting:
+
+- {PC ASCII file to Spectrum TLW file:asctlw}
+
+- {Spectrum TLW file to PC ASCII file:tlwasc}
+
+The Last Word is text processor written by Myrmidon software.
+
+.topic asctlw
+ ษออออออออออออออออออออออออป
+ บ ASCII TO THE LAST WORD บ
+ ศออออออออออออออออออออออออผ
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} to select ASCII file to be converted.
+
+After you selected the ASCII file, you will see the another {dialog} with one
+{list box:listbox}, {OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+The dialog for selecting position of the new {block:blocks} contains list box,
+OK button and Cancel button.
+
+The list box shows the positon of new created block. The converted file will be
+stored before highlighted block in destination {tape file:TapeFiles} (or
+appended to end of file if you highlight EOF marker).
+
+The rules of conversions are:
+
+- New line on PC ASCII file will be new line on The Last Word file.
+
+- All standard ASCII signs will be converted.
+
+- After every 40 signs will be placed soft line delimiter.
+
+.topic tlwasc
+ ษออออออออออออออออออออออออป
+ บ THE LAST WORD TO ASCII บ
+ ศออออออออออออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+{OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+You must place the highlight in list box to the {header} of The Last Word text
+file that you want to convert.
+
+When you select OK buton, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of output ASCII file. The
+default name is TLWASCII.TXT.
+
+The conversion will be as follows:
+
+- All standard ASCII signs (#32-#128) will be converted to same PC signs.
+
+- Signs above #127 will be ignored.
+
+- Signs #13 and #12 Null byte will be converted to new line.
+
+.topic ascmlv
+ ษออออออออออออออออออออออออออออออออออออป
+ บ ASCII TO THE MACHINE LIGHTNING AND บ
+ บ MACHINE LIGHTNING TO ASCII         บ
+ ศออออออออออออออออออออออออออออออออออออผ
+
+This submenu contains options for converting:
+
+- {PC ASCII file to ML file:ascml}
+
+- {ML file to PC ASCII file:mlasc}
+
+Machine lightning is macro assembler and game creation kit written by Oasis
+Software.
+
+.topic ascml
+ ษอออออออออออออออออออออออออออป
+ บ ASCII TO MACHINE LIGHNING บ
+ ศอออออออออออออออออออออออออออผ
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} to select ASCII file to be converted.
+
+After you selected the ASCII file, you will see the another {dialog} with one
+{list box:listbox}, {OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+The dialog for selecting position of the new {block:blocks} contains list box,
+OK button and Cancel button.
+
+The list box shows the position of new created block. The converted file will be
+stored before highlighted block in destination {tape file:tapefiles} (or
+appended to end of file if you highlight EOF marker).
+
+The rules of conversions are:
+
+- New line on PC ASCII file will be new line on Machine lightning file.
+
+- All standard ASCII signs will be converted.
+
+- Tabs and spaces will be converted to Machine lightning TAB simbol.
+
+.topic mlasc
+ ษออออออออออออออออออออออออออออป
+ บ MACHINE LIGHTNING TO ASCII บ
+ ศออออออออออออออออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+{OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+You must place the highlight in list box to the {header} of Machine lightning
+program that you want to convert.
+
+When you select OK buton, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of output ASCII file. The
+default name is MLASCII.TXT.
+
+The rules of conversions are:
+
+- All standard ASCII signs (#32-#128) will be converted to same PC signs.
+
+- Signs above #127 will be ignored.
+
+- The tabulators will be expanded.
+
+.topic ascfortfv
+ ษออออออออออออออออออออออออออออออป
+ บ ASCII TO  ABERSOFT FORTH AND บ
+ บ ABERSOFT FORTH TO ASCII      บ
+ ศออออออออออออออออออออออออออออออผ
+
+This submenu contains options for converting:
+
+- {PC ASCII file to Spectrum Forth file:ascforth}
+
+- {Spectrum Forth file to PC ASCII file:forthasc}
+
+Forth is compiler written by Abersoft.
+
+.topic ascforth
+ ษอออออออออออออออออออออออออออป
+ บ ASCII TO ABERSOFT'S FORTH บ
+ ศอออออออออออออออออออออออออออผ
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} to select ASCII file to be converted.
+
+After you selected the ASCII file, you will see the another {dialog} with one
+{list box:listbox}, {OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+The dialog for selecting position of the new {block:blocks} contains list box,
+OK button and Cancel button.
+
+The list box shows the position of new created block. The converted file will be
+stored before highlighted block in destination {tape file:TapeFIles} (or
+appended to end of file if you highlight EOF marker).
+
+The rules of conversions are:
+
+- All standard ASCII signs will be converted.
+
+- Resulting FORTH program will be exactly 11263 bytes long, because it is a
+size of the FORTH ram disk.
+
+.topic forthasc
+ ษอออออออออออออออออออออออออป
+ บ ABERSOFT FORTH TO ASCII บ
+ ศอออออออออออออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+{OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+You must place the highlight in list box to the {header} of Abersoft forth
+RAMDISC image that you want to convert. {Warajevo emulator:abzxtools} supports
+only converting of RAM discs.
+
+When you select OK buton, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of output ASCII file. The
+default name is FORTHASC.TXT.
+
+The rules of conversions are:
+
+- All standard ASCII signs (#32-#128) will be converted to same PC signs.
+
+- Signs above #127 will be ignored.
+
+- After every 32 bytes will be placed new line.
+
+.topic asclogov
+ ษออออออออออออออออออออออออออออป
+ บ ASCII TO SINCLAIR LOGO AND บ
+ บ SINCLAIR LOGO TO ASCII     บ
+ ศออออออออออออออออออออออออออออผ
+
+This submenu contains options for converting:
+
+- {PC ASCII file to Sinclair Logo file:ascml}
+
+- {Sinclair logo file to PC ASCII file:mlasc}
+
+Logo is interpreter written by Sinclair.
+
+.topic asclogo
+ ษออออออออออออออออออออออออป
+ บ ASCII TO SINCLAIR LOGO บ
+ ศออออออออออออออออออออออออผ
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} to select ASCII file to be converted.
+
+After you selected the ASCII file, you will see the another {dialog} with one
+{list box:listbox}, {OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+The dialog for selecting position of the new {block:blocks} contains list box,
+OK button and Cancel button.
+
+The list box shows the position of new created block. The converted file will be
+stored before highlighted block in destination {tape file:tapefiles} (or
+appended to end of file if you highlight EOF marker).
+
+When you selected OK button, the conversion will be as follows:
+
+- New line on PC ASCII file will be converted to 3 new line symbols in Logo
+program.
+
+- All ASCII signs will be converted.
+
+- Rest of the last block will be filled with zeros.
+
+.topic logoasc
+ ษออออออออออออออออออออออออป
+ บ SINCLAIR LOGO TO ASCII บ
+ ศออออออออออออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+{OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+You must place the highlight in list box to the {header} of Logo program that
+you want to convert.
+
+When you select OK buton, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of output ASCII file. The
+default name is LOGOASCI.TXT.
+
+The rules of conversions are:
+
+- All standard ASCII signs (#32-#128) will be converted to same PC signs.
+
+- Signs above #127 will be ignored.
+
+- Signs 0, or four new line signs terminate the conversion.
+
+Remark that Logo program can have more {blocks} with one header.
+
+.topic scrtif
+ ษอออออออออออออออออป
+ บ SCREEN$ TO TIFF บ
+ ศอออออออออออออออออผ
+
+{Warajevo emulator:abzxtools} can convert Spectrum's screen image to
+{color:scrcoltif} or {black/white:scrbwtif} TIFF picture.
+
+.topic scrcoltif
+ ษออออออออออออออออออออป
+ บ COLOR TIFF PICTURE บ
+ ศออออออออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+{OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+You must place the highlight in list box to the {header} of Spectrum screen
+file that you want to convert.
+
+When you select OK button, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of output TIFF file. The
+default name is COLORTIF.TIF.
+
+.topic scrbwtif
+ ษออออออออออออออออออออออออออออออป
+ บ BLACK AND WHITE TIFF PICTURE บ
+ ศออออออออออออออออออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+{OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+You must place the highlight in list box to the {header} of Spectrum screen
+file that you want to convert.
+
+When you select OK buton, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of output TIFF file. The
+default name is BWTIFF.TIF.
+
+.topic other
+ ษอออออออออออออออออป
+ บ OTHER EMULATORS บ
+ ศอออออออออออออออออผ
+
+{Warajevo tape files:TapeFIles} and {blocks} can be converted from and to
+format of different Spectrum emulators. This include:
+
+- {Z80:lunwara} by Gerton Lunter from Holland;
+
+- {SPECEM:irishwara} by Kevin J. Phair from Ireland;
+
+- {ZX:romwara} by Roman and easy inc. (Peter Kroselj from Slovenia?);
+
+- {SP:polishwara} by J. Swiatek and K. Makowski from Poland;
+
+- {Spectrum 2.00:spec200wara} by Pedro M. R. Salas from Spain;
+
+- {ZX:garabikwara} by Radovan Garabik from Slovakia;
+
+- {ZX:bruknerwara} by Eduard Rindt and Ludek Brukner from Czech republic;
+
+- {SP105:trdwara} by N. V. Shalaev from Rusia;
+
+- {ZX32:zx32wara} by Vaggelis Kapartzianis from Greece.
+
+- {JPP:vocwara} by Arnt Guldbransen from Norway.
+
+Also, conversions to and from {TZX:tzxwara} format (in recent time very
+popular tape format by Tomaz Kac from Slovenia, which is supported in X128
+emulator by James McKay and MultiMachine emulator by Paul Hodgson from Great
+Brotain, and conversions to and from {ZXS tape format:zxswara} (storage format
+used on Russian Internet site ZX Museum) are implemented too.
+
+Except conversion {Lunter to Warajevo:lunwara}, all other options work only
+with tapes in native {Warajevo format:tapefiles}.
+
+.topic romwara
+ ษอออออออออออออออออออออออออออออออป
+ บ ROMAN & EASY INC. TO WARAJEVO บ
+ ศอออออออออออออออออออออออออออออออผ
+
+Converts tape files format from ZX by Roman & easy inc to Warajevo format,
+appending files to current {Warajevo tape file:TapeFiles}.
+
+When you select this option, you will see on the screen the {dialog} for
+selecting tape number you want to convert.
+
+You must be {placed in directory:cd} FILES. You will be prompted before
+appending of every block.
+
+ZX emulator by Roman and Easy inc. uses names of files ZXTnnmmm.H and
+ZXTnnmmm.B and uses special files which contain logical block structure of
+each tape, and one file which contain tape names.
+
+.topic wararoman
+ ษอออออออออออออออออออออออออออออออป
+ บ WARAJEVO TO ROMAN & EASY INC. บ
+ ศอออออออออออออออออออออออออออออออผ
+
+To convert from {Warajevo tape file:TapeFiles} to Roman & easy inc, you
+must {change directory:cd} to directory FILES under the directory where
+emulator 'Roman & Easy' is located.
+
+ZX emulator by Roman and Easy inc. uses names of files ZXTnnmmm.H and
+ZXTnnmmm.B and uses special files which contain logical block structure of each
+tape, and one file which contain tape names.
+
+This option will create .H and .B files based on active Warajevo tape, but
+also it will adjust TAPES.ZX file and create ZXT file with a same name as
+Warajevo tape file.
+
+.topic lunwara
+ ษออออออออออออออออออออออออป
+ บ LUNTER Z80 TO WARAJEVO บ
+ ศออออออออออออออออออออออออผ
+
+Converts tape files format from 'Z80' by Gerton Lunter to native
+{Warajevo tape format:tapefiles}. This format is also used in Russian SP_UKV,
+X128 by James McKay and Wspecem by Rui Ribeiro.
+
+Warning: Although both formats have the same extension (TAP) they are very
+different.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog}.
+
+If active tape file is Warajevo tape file, select name of a tape which you
+want to convert. All {blocks} from this tape will be appended on the end of
+the current Warajevo tape.
+
+If active tape file is Lunter TAP file, select name of the destination tape
+(default name will be same as name of the source tape with prefix 'W', for
+example TAPE.TAP becomes WTAPE.TAP). In this case, conversion will create a
+new tape in native Warajevo format.
+
+.topic waralun
+ ษออออออออออออออออออออออออป
+ บ WARAJEVO TO LUNTER Z80 บ
+ ศออออออออออออออออออออออออผ
+
+Converts {tape files:tapefiles} format from Warajevo to 'Z80' by Gerton Lunter.
+
+Warning: Although both formats have the same extension (TAP) they are very
+different.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of tape file compatible with
+'Z80' emulator. The default name will be same as name of the source tape with
+prefix 'L', for example TAPE.TAP becomes LTAPE.TAP.
+
+.topic irishwara
+ ษออออออออออออออออออออออออออป
+ บ IRISH SPECEM TO WARAJEVO บ
+ ศออออออออออออออออออออออออออผ
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} to select SPECEM file to be converted.
+
+After you selected the SPECEM file, you will see the another {dialog} with one
+{list box:listbox}, {OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+The dialog for selecting position of the new {block:blocks} contains list box,
+OK button and Cancel button.
+
+The list box shows the positon of new created block. The converted file will be
+stored before highlighted block in destination {tape file:tapefiles} (or
+appended to end of file if you highlight EOF marker).
+
+.topic warairish
+ ษออออออออออออออออออออออออออป
+ บ WARAJEVO TO IRISH SPECEM บ
+ ศออออออออออออออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox},
+{OK button:OKbutton} and {Cancel button:Cancelbutton}.
+
+You must place the highlight in list box to the {header} of Spectrum file that
+you want to convert.
+
+This emulator not support {headerless}.
+
+.topic warapolish
+ ษอออออออออออออออออออออออป
+ บ WARAJEVO TO POLISH SP บ
+ ศอออออออออออออออออออออออผ
+
+Converts {tape files:tapefiles} format from Warajevo to 'SP' by J. Swiatek and
+K. Makowski from Poland.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of tape file compatible with
+'SP' emulator.
+
+The default name is TAPE_ZX.SPC.
+
+SPC format is also used in Russian SP_UKV.
+
+.topic polishwara
+ ษอออออออออออออออออออออออป
+ บ POLISH SP TO WARAJEVO บ
+ ศอออออออออออออออออออออออผ
+
+Converts tape files format from 'SP' by J. Swiatek and K. Makowski to
+{Warajevo format:tapefiles}.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of tape file compatible with
+'SP' emulator. All {blocks} from SPC tape will be appended on the end of active
+Warajevo tape file.
+
+SPC format is also used in Russian SP_UKV.
+
+.topic spec200wara
+ ษอออออออออออออออออออออออออออป
+ บ SPECTRUM 2.00 TO WARAJEVO บ
+ ศอออออออออออออออออออออออออออผ
+Converts tape files format from 'Spectrum 2.00' by Pedro M.R. Salas to
+{Warajevo tape format:tapefiles}. The extension of this tape format is BLK. It
+is essencialy same as Lunter's TAP format.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of tape file compatible with
+'Spectrum 2.00' emulator.
+
+All {blocks} from 'Spectrum 2.00' tape file will be appended to current Warajevo
+tape file.
+
+.topic waraspec200
+ ษอออออออออออออออออออออออออออป
+ บ WARAJEVO TO SPECTRUM 2.00 บ
+ ศอออออออออออออออออออออออออออผ
+
+Converts {tape files:tapefiles} format from Warajevo to 'Spectrum 2.00' by
+Pedro M. L. Salas.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of tape file compatible with
+'Spectrum 2.00' emulator.  The extension is .BLK. This format is essentially 
+the same as in Lunter's Z80 emulator.
+
+.topic garabikwara
+ ษออออออออออออออออออออออออป
+ บ NUCLEAR ZX TO WARAJEVO บ
+ ศออออออออออออออออออออออออผ
+
+Converts tape files format from 'Nuclear ZX' by Radovan Garabik to
+{Warajevo tape format:tapefiles}. The extension of Garabik tape format is LTP.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of tape file compatible
+with 'Nuclear ZX' emulator. The extension will be .LTP. This format is
+essentially the same as in {polish:warapolish} emulator.
+
+All {blocks} from 'Nuclear ZX' tape file will be appended to current
+Warajevo tape file.
+
+.topic waragarabik
+ ษออออออออออออออออออออออออป
+ บ WARAJEVO TO NUCLEAR ZX บ
+ ศออออออออออออออออออออออออผ
+
+Converts {tape files:tapefiles} format from Warajevo to 'Nuclear ZX' by Radovan Garabik.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of tape file compatible with
+'ZX Garabik' emulator.  The extension will be .LTP. This format is essentially
+the same as in {polish:warapolish} emulator.
+
+.topic warabrukner
+ ษออออออออออออออออออออออออป
+ บ WARAJEVO TO ZX BRUKNER บ
+ ศออออออออออออออออออออออออผ
+
+Converts {tape files:tapefiles} format from Warajevo to 'ZX' by Eduard Rindt
+and Ludek Brukner.
+
+This option will split active Warajevo tape file to files in Brukner's
+format. This format consists of a dozen of .001, .002, .003 etc. files.
+Keep in mind that 'ZX' emulator supports up to 100 {blocks} in one
+tape.
+
+.topic bruknerwara
+ ษออออออออออออออออออออออออป
+ บ ZX BRUKNER TO WARAJEVO บ
+ ศออออออออออออออออออออออออผ
+
+This option adds one {block:blocks} in Rindt-Brukner's emulator format (with
+extensions .001, .002, etc.). Choose the block using
+{file selecting dialog:fsdialog}, and then select the position of this block
+in current {tape file:tapefiles}.
+
+This option works similary as option {add blocks:add} in
+{blocks submenu:blocksmenu}.
+
+.topic tzxwara
+ ษอออออออออออออออออป
+ บ TZX TO WARAJEVO บ
+ ศอออออออออออออออออผ
+
+TZX format is tape format by Tomaz Kac from Slovenia, which is planed to be an
+universal format for keeping Spectrum programs on such way that it includes
+all possible cases which appears on real Spectrum.
+
+This format may include textual program descriptions, pictures, and even some
+commands (some kind of macrolanguage). In this moment, this format is supported
+in X128 emulator by James McKay and in MultiMachine emulator by Paul Hodgson
+(both from Great Britain).
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of TZX tape file.
+
+All {blocks} from 'TZX' tape file will be appended to current
+{Warajevo tape file:tapefiles}. TZX format is much more complex than TAP
+format, so many details during conversion will be simply ignored. Also, rules
+of TZX conversion may be customized using option
+{TZX conversion setup:tzxsetup}
+
+The rules of the conversion are:
+
+'Standard speed' blocks will be sampled to {EAR sample:earsample} blocks, or
+converted into {headerless} blocks (if you thrust in EDGE RECOGNIZER),
+depending of current {settings:tzxsetup}. For more details about edge
+recognizer, see the manual. Pause after them will be sampled to EAR sample
+block or ignored, depending of settings.
+
+'Pure tone' and 'Sequence of pulses' blocks will be sampled to EAR Sample
+blocks or ignored, depending of settings.
+
+'Turbo loading' and 'Pure data' blocks will be converted to EAR Sample blocks,
+or into headerless blocks (if you believe that edge recognizer would
+recognize them), depending of settings.
+
+'Direct recording' blocks will be converted only if they follows recommended
+sampling frequencies 44100 or 22050 Hz. Optionally, they also may be ignored.
+                                        
+'Finite Pause' block will be sampled to EAR sample block.
+
+'Infinite pause' block will be saved as normal block, with zero size.
+
+'Group Start' block indicates that following EAR samples should not be
+separated.
+
+'Group End' block starts separating of following samples.
+
+'Loop' and 'EndLoop' blocks are implemented using repeated sampling.
+
+'Jump To' block is implemented only for forward jumps; backward jumps may
+optionally be ignored.
+
+'Call Sequence' and 'Return From Sequence' are not planed to be implemented.
+
+'Select' block will simply be ignored.
+
+'Text Description' block will be displayed on the screen during the
+conversion, or will be ignored, depending of settings.
+
+'Message block' depending of settings can be ignored, displayed on the screen
+during the conversion, or converted into 'Character array' block which may be
+seen in Tape Manager in the emulator itself.
+
+'Archive Info' block is ignored.
+
+'Hardware Info' block in {Start button:sbutton} checks whether the program
+uses 128 K features, and in that case switch to SPEC128.EXE , if the program
+uses Timex 2068 features, active emulator will be TS2068.EXE, if the computer
+is not supported the conversion will fail, and if the peripheral is not
+supported, it will be ignored.
+
+'Emulation Info' sets border and video synchronization, if the conversion is
+started via Start button.
+
+'Custom Info' block is ignored.
+
+'Snapshot' block is extracted only in Start button. Only Z80 snapshots are
+supported. If there are more than one snapshot blocks, the last one will be
+executed.
+
+'Z' block is ignored.
+
+TZX format is very complex, so this conversion is a bit slower than other
+conversions.
+
+.topic tzxsetup
+ ษออออออออออออออออออออออป
+ บ TZX CONVERSION SETUP บ
+ ศออออออออออออออออออออออผ
+
+This option opens a huge {dialog} with 15 {checkboxes:chkbox},
+{OK button:okbutton}, and {Cancel button:cancelbutton}. Using this option you
+may customise treatment of {TZX files:waratzx} in the emulator. Each checkbox
+will be described separately.
+
+Sample standard blocks rather than copy them:
+
+Determines whether 'Standard speed' {blocks} would be converted into
+{EAR Sample:earsample} or {Headerless} blocks. First variant is a bit more
+reliable, because it will work in all cases, but it will cause remarkable
+slower loading even with quite ordinary programs.
+
+Sample pause after standard block:
+
+Determines whether pause after 'Standard speed' block would be sampled, or
+ignored.
+
+Sample Turbo blocks rather than copy them:
+
+Determines whether 'Turbo loading' blocks would be converted into EAR Sample
+or Headerless blocks. First variant is more reliable. Second variant (if
+EDGE RECOGNIZER success to recognize block) will cause remarkable faster
+loading, but first variant will work in all cases.
+
+Sample pause after turbo block and pure data:
+
+Determines whether pause after 'Turbo loading' and 'Pure data' blocks would
+be sampled, or ignored.
+
+Sample pure tone and sequence of pulses:
+
+Determines whether 'Pure tone' and 'Sequence of pulses' blocks would be    
+sampled or ignored; second variant is necessary if you determine that 'Pure
+data' blocks would be converted into Headerless blocks.
+
+Sample pure data rather than copy them:
+
+Determines whether 'Pure data' blocks would be converted into EAR Sample or
+Headerless blocks. Like in previous similar options, first variant is much
+more reliable.
+
+Embed messages in converted tape:
+
+When this option is switched on, 'Message' blocks will be converted into
+'Character array' {header} blocks, which may be seen in Tape Manager into the
+{emulator:runemul} itself. The message will be truncated to 10 characters.
+This option is useful for separating levels in games supported in
+{TZX format:waratzx}.
+
+Convert direct recording:
+
+Determines whether 'Direct recording' blocks would be converted or ignored.
+
+Put all blocks and groups in separate samples:
+
+When this option is turned off, during conversion logical structure of TZX
+file will not be preserved, so converted file will have "pasted" blocks.
+Converted file then will have much less blocks, and the drawback is a fact
+that blocks on converted tape will not logically correspond to blocks on TZX
+file. Switching this option off may drastically speed up conversion of TZX
+files which have a huge number of blocks (for example, in Firebird Bleepload
+programs).
+  
+Allow negative jumps (not yet implemented):
+
+Determines would negative jumps in TZX file would be allowed (although they 
+are not implemented yet).
+  
+Show text description blocks:
+
+Determines whether text descriptions from 'Text Description' block would be  
+displayed on the screen during conversion or would be ignored.
+
+Show message blocks:
+
+Determines whether 'Message' blocks would be displayed on the screen during
+conversion, or would be ignored.
+
+Extract snapshot block
+
+Determines whether 'Snapshot' block would be extracted into a
+{snapshot:snapfiles} file during starting of TZX files using
+{'Start' button:sbutton}, or would be ignored.
+
+Show warning for nonimplemented blocks:
+
+Determines whether the environment would display warning message for
+nonimplemented TZX blocks.
+
+Consider hardware and emulation info:
+
+Determines whether 'Hardware Info' and 'Emulation Info' blocks would be
+considerated during starting of TZX files using 'Start' button, or would be
+ignored.
+
+.topic waratzx
+ ษอออออออออออออออออป
+ บ WARAJEVO TO TZX บ
+ ศอออออออออออออออออผ
+
+Converts {tape files:tapefiles} format from Warajevo to {TZX format:tzxwara}
+by Tomaz Kac.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of TZX tape file .
+
+.topic waravoc
+ ษอออออออออออออออออป
+ บ WARAJEVO TO VOC บ
+ ศอออออออออออออออออผ
+
+Converts {tape files:tapefiles} format from Warajevo to VOC.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of VOC sample file .
+
+.topic vocwara
+ ษอออออออออออออออออป
+ บ VOC TO WARAJEVO บ
+ ศอออออออออออออออออผ
+
+VOC format is one of the most popular methods for storing data from
+original tape, using audio sample. It was developed by Creative Labs,
+and the first emulator that used this format was JPP by Arnt Gulbransen.
+This format is implemented also in Z80 by Gerton Lunter and X128 by
+James Mc Kay.
+
+Use {file selecting dialog:fsdialog} for defining name of VOC sample file .
+All data from VOC file will be converted to {EAR Sample:earsample} blocks.
+Such {blocks} will be appended on the end of current {tape file:tapefiles}.
+
+.topic zxswara
+ ษอออออออออออออออออออออออป
+ บ ZX MUSEUM TO WARAJEVO บ
+ ศอออออออออออออออออออออออผ
+
+ZX Museum is Russian Internet site on which you can found about 1000 programs
+stored in ZXS format. This format is not directly supported by any emulator.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of ZXS tape file.
+
+All {blocks} from 'ZXS' tape file will be appended to current
+{Warajevo tape file:tapefiles}. ZXS format is more complex than TAP format, so
+eventual extra features of ZXS format during conversion will be simply ignored.
+
+.topic warazxs
+ ษอออออออออออออออออออออออป
+ บ WARAJEVO TO ZX MUSEUM บ
+ ศอออออออออออออออออออออออผ
+
+Converts {tape files:tapefiles} format from Warajevo to {ZXS format:zxswara}.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of ZXS tape file .
+
+.topic trdwara
+ ษออออออออออออออออออออป
+ บ TR-DOS TO WARAJEVO บ
+ ศออออออออออออออออออออผ
+
+SPECTRUM + TR-DOS (also known as SP105) is emulator by N. V. Shalaev, which
+emulates expanded version of ZX Spectrum 128 with TR-DOS disc interface. It
+uses TRD file format.
+
+TRD, in fact, format for disc emulation, not for {tape emulation:tapefiles},
+but since this is the only format which this emulator supports, we allow
+partial conversions from TRD format to TAP format, and vice versa. To complete
+conversion, some things must be done manually.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of TRD disc file. All
+programs from 'TRD' disc file will be appended to current
+{Warajevo tape file:tapefiles}.
+
+After doing this, converted programs surely will not work, because loading
+from TR-DOS disc is performed using different commands than loading from tape.
+So, after the conversion, you must change manually all BASIC loaders on the
+converted tape file.
+
+.topic waratrd
+ ษออออออออออออออออออออป
+ บ WARAJEVO TO TR-DOS บ
+ ศออออออออออออออออออออผ
+
+{TRD format:trdwara} does not support {blocks} without {headers:header}.
+
+You must place the highlight in the {list box:listbox} to the header of
+program that you want to convert.
+
+After this, using {file selecting dialog:fsdialog} select TRD file on which
+you want to copy program from {TAP file:tapefiles} (so, TRD file must exists,
+and it must be properly formated using SP105 emulator).
+
+After doing this, converted programs surely will not work, because loading
+from TR-DOS disc is performed using different commands than loading from tape.
+So, after the conversion, you must change manually all BASIC loaders on the
+converted tape file.
+
+Manual conversions is not necessary when the TAP file is created using
+{conversion:snaptap} from a {snapshot file:snapfiles}, with option 'Prepared
+to {copy to TR-DOS:snaptap}'.
+
+.topic zx32wara
+ ษออออออออออออออออออป
+ บ ZX32 TO WARAJEVO บ
+ ศออออออออออออออออออผ
+
+Converts tape files format from 'ZX32' emulator for Windows 95 by Vaggelis
+Kapartzianis to {Warajevo tape format:tapefiles}. The extension of 'ZX32'
+file format is ZXT or ZXS, and it may contain tapes, {snapshots} and many
+other things. This is a complex format.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of ZXT tape file.
+
+All {blocks} from 'ZXT' or 'ZXS' file which are related to tapes will be
+appended to current {Warajevo tape file:tapefiles}. ZXT (ZXS) format is much
+more complex than TAP format, so many details during conversion will be simply
+ignored.
+
+This conversion does not support compressed ZXT/ZXS format.
+
+.topic warazx32
+ ษออออออออออออออออออป
+ บ WARAJEVO TO ZX32 บ
+ ศออออออออออออออออออผ
+
+Converts {tape files:tapefiles} format from Warajevo to format of
+{ZX32:zx32wara} emulator by Vaggelis Kapartzianis.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of ZXT tape file.
+
+.topic blocks
+ ษอออออออป
+ บ BLOCK บ
+ ศอออออออผ
+
+Block in {tape file:tapefiles} is equivalent to block on real tape.
+
+On real tape, block contains leader (you can usually see red-cyan lines, and
+hear continuos tone) and data part (usually lines are yellow-blue and tone is
+variable). In data part there are synchro byte, {flag byte:flagbyte}, actual
+data and check byte.
+
+On emulated tape (tape file) we store flag byte and actual data. In native
+Warajevo format check byte is calculated, so it is always good. In Lunter's
+TAP format, check byte is stored too.
+
+Block can be {header}, {headerless} and {EAR sample:earsample}.
+
+.topic header
+ ษออออออออป
+ บ HEADER บ
+ ศออออออออผ
+
+Header is a special {block:blocks} that define size, name and type of data in
+following {headerless} block.
+
+Header is always 17 bytes long.
+
+In {listboxes:listbox} we used some abbreviations to display different headers:
+
+ PENETRATOR run 10, 1200+30
+
+This is basic program called PENETRATOR. It is long 1200 bytes without
+variables, and variables require additional 30 bytes. The start line is 10.
+
+ TLL       bas  180+0
+
+This is basic program called TLL. It is long 180 bytes without variables, and
+variables not require additional space. The program has no autostart.
+
+ ACCOUNT   num a(), 5000
+
+This is numerical array, original name is a(). It is 5000 bytes long.
+
+ TELEPHONE chr a$(), 12123
+
+This is character array, original name is a$(). It is 12123 bytes long.
+
+ MEMORY    byt 32000, 3121
+
+This is memory image. The starting address is 32000, size is 3121 bytes.
+
+.topic headerless
+ ษออออออออออออป
+ บ HEADERLESS บ
+ ศออออออออออออผ
+
+Headerless can be in two types, {compressed:implode} and uncompressed.
+
+In {listboxes:listbox} we used some abbreviations to display different
+headerless {blocks}:
+
+ Headerless len 20000 F:255
+
+This means that block is 20000 bytes long and {flag byte:flagbyte} is 255.
+
+ Compressed len 2048 (510)
+
+This means that the block is compressed, original size was 2048, but it use on
+disk only 510 bytes.
+
+.topic earsample
+ ษออออออออออออป
+ บ EAR SAMPLE บ
+ ศออออออออออออผ
+
+{Warajevo:abzxtools} emulator also supports special {blocks} which contain
+samples of real tape input which are taken in regular time intervals. These
+samples usually represent samples of tone record of a some totally
+nonstandard-saved program, but principally, they may also represent music or
+speech records, etc.
+
+Blocks which contain samples may be {compressed:implode} or uncompressed.
+
+In {listboxes:listbox} we used some abrevations to display blocks which
+contain samples:
+
+ EAR sample len 64993 (5807)
+
+This is a block which contains pure samples from tape EAR socket. Logical
+length of the block is 64993 bytes, but it on the disc ocuppies only 5807 bytes
+due to compression.
+
+Sampled tone records may be very long (500 KB or more). Due to technical
+reasons, Warajevo emulator cuts these records in a serial of no more than 64
+KB long blocks. So, one sampled record may be splited to ten or more blocks.
+
+.topic flagbyte
+ ษอออออออออออป
+ บ FLAG BYTE บ
+ ศอออออออออออผ
+
+Flag byte is byte that determine type of {block:blocks} ({header},
+{headerless} data block, or special headerless). It is not loaded to memory. It
+is usualy 0 for headers or 255 for data blocks following header.
+
+Some headerlesses can have different value.
+
+.topic edidiag
+ ษอออออออออออออออออป
+ บ EDITOR'S DIALOG บ
+ ศอออออออออออออออออผ
+
+This {dialog} contains area for editing some data, usually memory contents. You
+can move cursor through it using standard keys from {list boxes:listbox} and
+mouse.
+
+The group of {radio buttons:radiobutton} determine type of data which you want
+to enter. {OK button:OKbutton} and {Cancel button:cancelbutton} have the
+standard function.
+
+.topic snapshots
+ ษอออออออออออออออป
+ บ Z80SNAPS MENU บ
+ ศอออออออออออออออผ
+
+This menu is dedicated for manipulations with {snapshot files:snapfiles}. In
+this menu you have submenues for {selecting and viewing:snaps}, {editing:sedit}
+and {converting:convert} snapshot files between many different formats.
+
+.topic snaps
+ ษอออออออออออออออป
+ บ SNAPS SUBMENU บ
+ ศอออออออออออออออผ
+
+In this submenu there are options for {selecting:select},
+{unselecting:sunselect} and {renaming:srename} of {snapshot files:snapfiles},
+and {viewing:sinfo} of snapshot header.
+
+.topic select
+ ษอออออออออออออออออป
+ บ SELECT SNAPSHOT บ
+ ศอออออออออออออออออผ
+
+Selects the current {snapshot file:snapfiles}. All operations in
+{Z80Snaps:snapshots} menu will be related to it.
+
+This option calls {file selecting dialog:fsdialog} to select the file name.
+
+.topic sunselect
+ ษอออออออออออออออออออป
+ บ UNSELECT SNAPSHOT บ
+ ศอออออออออออออออออออผ
+
+Cancels {selecting:select} of current {snapshot file:snapfiles}.
+
+If you call environment from emulator, this option will reset emulator after
+{running emulator:runemul} again, because after this option memory image will
+not be present.
+
+.topic srename
+ ษอออออออออออออออออป
+ บ RENAME SNAPSHOT บ
+ ศอออออออออออออออออผ
+
+This option will open {dialog} with {input line:inputline} which allows
+renaming active {snapshot file:snapfiles}, {OK button:okbutton} and
+{Cancel button:cancelbutton}.
+
+If you call environment from emulator, current snapshot file will always be
+TEMP.Z80. So, this option indirectly allows snapshots saving with any name.
+
+If you want to quickly save snapshot from emulator with wanted name, simply
+press F10 then F7 (rename snapshot), then give the wanted name.
+
+.topic sinfo
+ ษอออออออออออออออป
+ บ SNAPSHOT INFO บ
+ ศอออออออออออออออผ
+
+When you select this option, you will see {dialog} with one {list box:listbox}
+and {OK button:OKbutton}.
+
+Using the list box you can view through bytes of {snapshot's:snapfiles} header.
+For detailed explanation of header structure, read the manual.
+
+.topic sedit
+ ษอออออออออออออออป
+ บ EDIT SNAPSHOT บ
+ ศอออออออออออออออผ
+
+This submenu allows you to edit {processor registers:seditreg},
+{hardware ports:sedithard} and {memory image:editmeme} in a
+{snapshot file:snapfiles}.
+
+.topic seditreg
+ ษออออออออออออออออป
+ บ EDIT REGISTERS บ
+ ศออออออออออออออออผ
+
+This option calls large {dialog} with {input lines:inputline} (for entering
+register values), three groups of {radio buttons:radiobutton}, (for selecting
+interrupt mode and interrupt flip flops), {OK button:OKbutton} and
+{Cancel button:cancelbutton}.
+
+.topic sedithard
+ ษอออออออออออออออป
+ บ EDIT HARDWARE บ
+ ศอออออออออออออออผ
+
+When editing 48 K {snapshots:snapfiles} in {dialog} there is a group of
+{radio buttons:radiobutton} for selecting type of hardware configuration (with
+or without interface I). The another group of radio buttons determine is
+interface I ROM paged or not. The dialog also contain {input line:inputline}
+for entering the BORDER color, {OK button:okbutton} and
+{Cancel button:cancelbutton}.
+
+The dialog for 128 K snapshots also contain input lines for entering state of
+MMU port, sound registers and last selected sound register. Similar dialog is
+also for Timex snapshots.
+
+.topic editmeme
+ ษอออออออออออออป
+ บ EDIT MEMORY บ
+ ศอออออออออออออผ
+
+When editing 48 K or Timex {snapshots:snapfiles}, the program will start
+{Editor dialog:edidiag} for editing all 48K of memory.
+
+For 128 K snapshots, you must previously select the page (16 K long) to be
+edited. The selecting of the page you can do using {dialog} with group of
+{radio buttons:radiobutton}, {OK button:okbutton} and
+{Cancel button:cancelbutton}.
+
+.topic convert
+ ษอออออออออออออออออออป
+ บ CONVERT SNAPSHOTS บ
+ ศอออออออออออออออออออผ
+
+This submenu contains options for converting between many {snapshot:snapfiles}
+formats, including:
+
+- {SPECTRUM:spwaram}, by Pedro Gimeno from Spain;
+
+- {VGASPEC:svgawaram}, by Alberto Olloqui from Spain;
+
+- {SPECEM:sirishwaram}, by Kevin A. Pair from Ireland;
+
+- {JPP:warajppm}, by Arnt Guldbransen from Norway;
+
+- {SPECEMU G:waragermanm}, by Bernd Waschke from Germany;
+
+- {SP UKV:waraspukvm}, by unknown author from Rusia;
+
+- {ZX:warasnpm}, by Radovan Garabik from Slovakia;
+
+- {X128:warax128m}, by James McKay from Great Britain;
+
+- {SPECTRUM 2.00:warasitmm}, by Pedro M. R. Salas from Spain;
+
+- {ZX32:waravaggm}, by Vaggelis Kapartzianis from Greek.
+
+.topic spwaram
+ ษอออออออออออออออออออออป
+ บ WARAJEVO TO SPANISH บ
+ บ SPANISH TO WARAJEVO บ
+ ศอออออออออออออออออออออผ
+
+This submenu supports following conversions:
+
+- {Warajevo to SPECTRUM:swarasp}
+
+- {SPECTRUM to Warajevo:sspwara}
+
+SPECTRUM is emulator by Pedro Gimeno from Spain, and uses SP
+{snapshot:snapfiles} format.
+
+.topic sspwara
+ ษอออออออออออออออออออออป
+ บ SPANISH TO WARAJEVO บ
+ ศอออออออออออออออออออออผ
+
+This option supports conversions of {snapshots:snapfiles} from SPECTRUM to
+{Warajevo:abzxtools}. SPECTRUM is emulator by Pedro Gimeno from Spain, and uses
+SP snapshot format.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose SP file name.
+
+After you selected SP file to be converted, the another file selection dialog
+will prompt you to select output snapshot file (in Warajevo compatible Z80
+format).
+
+.topic swarasp
+ ษอออออออออออออออออออออป
+ บ WARAJEVO TO SPANISH บ
+ ศอออออออออออออออออออออผ
+
+This option supports conversions of {snapshots:snapfiles} from
+{Warajevo:abzxtools} to SPECTRUM. SPECTRUM is emulator by Pedro Gimeno from
+Spain, and uses SP snapshot format.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose output SP file name.
+
+All data about Interface I, SamRam and 128 K features will be ignored.
+
+.topic svgawaram
+ ษอออออออออออออออออออออป
+ บ WARAJEVO TO VGASPEC บ
+ บ VGASPEC TO WARAJEVO บ
+ ศอออออออออออออออออออออผ
+
+This submenu supports following conversions:
+
+- {Warajevo to VGASPEC:swaravga}
+
+- {VGASPEC to Warajevo:svgawara}
+
+VGASPEC is emulator by Alberto Olloqui from Spain, and uses SP
+{snapshot:snapfiles} format. It is illegal prerelase of {SPECTRUM:spwaram} by
+Pedro Gimeno.
+
+.topic svgawara
+ ษอออออออออออออออออออออป
+ บ VGASPEC TO WARAJEVO บ
+ ศอออออออออออออออออออออผ
+
+This option supports conversions of {snapshots:snapfiles} from VGASPEC to
+{Warajevo:abzxtools}.
+
+VGASPEC is emulator by Alberto Olloqui from Spain, and uses SP snapshot format.
+It is illegal prerelase of {SPECTRUM:spwaram} by Pedro Gimeno.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose SP file name.
+
+After you selected SP file to be converted, the another file selection dialog
+will prompt you to select output snapshot file (in Warajevo compatible Z80
+format).
+
+.topic swaravga
+ ษอออออออออออออออออออออป
+ บ WARAJEVO TO VGASPEC บ
+ ศอออออออออออออออออออออผ
+
+This option supports conversions of {snapshots:snapfiles} from
+{Warajevo:abzxtools} to VGASPEC.
+
+VGASPEC is emulator by Alberto Olloqui from Spain, and uses SP snapshot format.
+It is illegal prerelase of {SPECTRUM:spwaram} by Pedro Gimeno.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose output SP file name.
+
+All data about Interface I, SamRam and 128 K features will be ignored.
+
+.topic sirishwaram
+ ษอออออออออออออออออออป
+ บ WARAJEVO TO IRISH บ
+ บ IRISH TO WARAJEVO บ
+ ศอออออออออออออออออออผ
+
+This submenu supports following conversions:
+
+- {Warajevo to SPECEM:swarairish}
+
+- {SPECEM to Warajevo:sirishwara}
+
+SPECEM is emulator by Kevin A. Pair from Ireland, and uses PRG format.
+
+.topic sirishwara
+ ษอออออออออออออออออออป
+ บ IRISH TO WARAJEVO บ
+ ศอออออออออออออออออออผ
+
+This option supports conversions of {snapshots:snapfiles} from SPECEM to
+{Warajevo:abzxtools}.
+
+SPECEM is emulator by Kevin A. Pair from Ireland, and uses PRG format.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose PRG file name.
+
+After you selected PRG file to be converted, the another file selection dialog
+will prompt you to select output snapshot file (in Warajevo compatible Z80
+format).
+
+.topic swarairish
+ ษอออออออออออออออออออป
+ บ WARAJEVO TO IRISH บ
+ ศอออออออออออออออออออผ
+
+This option supports conversions of {snapshots:snapfiles} from
+{Warajevo:abzxtools} to SPECEM.
+
+SPECEM is emulator by Kevin A. Pair from Ireland, and uses PRG format.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose output PRG file name.
+
+All data about Interface I, SamRam and 128 K features will be ignored.
+
+.topic warajppm
+ ษอออออออออออออออออป
+ บ WARAJEVO TO JPP บ
+ บ JPP TO WARAJEVO บ
+ ศอออออออออออออออออผ
+
+This submenu supports following conversions:
+
+- {Warajevo to JPP:warajpp}
+
+- {JPP to Warajevo:jppwara}
+
+JPP is emulator by Arnt Guldbransen, from Norway, and uses SNA format. This
+format is also used in emulator Z80 by Gerton Lunter, X128 emulator by James
+McKay, Russian emulator SP_UKV, and XZX for XWindows by Des Harriot.
+
+.topic jppwara
+ ษอออออออออออออออออป
+ บ JPP TO WARAJEVO บ
+ ศอออออออออออออออออผ
+
+This option supports conversion of {snapshots:snapfiles} from JPP to
+{Warajevo:abzxtools}.
+
+JPP is emulator by Arnt Guldbransen, from Norway, and uses SNA format. This
+format is also used in emulator Z80 by Gerton Lunter, X128, SP_UKV, Wspecem
+and XZX for XWindows.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose SNA file name.
+
+After you selected SNA file to be converted, the another file selection dialog
+will prompt you to select output snapshot file (in Warajevo compatible Z80
+format).
+
+.topic warajpp
+ ษอออออออออออออออออป
+ บ WARAJEVO TO JPP บ
+ ศอออออออออออออออออผ
+
+This option supports conversion of {snapshots:snapfiles} from
+{Warajevo:abzxtools} to JPP.
+
+JPP is emulator by Arnt Guldbransen, from Norway, and uses SNA format. This
+format is also used in emulator Z80 by Gerton Lunter, X128, SP_UKV, Wspecem
+and XZX for XWindows.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose output SNA file name.
+
+All data about Interface I, SamRam and 128 K features will be ignored.
+
+.topic waragermanm
+ ษอออออออออออออออออออออออป
+ บ WARAJEVO TO SPECEMU G บ
+ บ SPECEMU G TO WARAJEVO บ
+ ศอออออออออออออออออออออออผ
+
+This submenu supports following conversions:
+
+- {Warajevo to SpecEmu G:waragerman}
+
+- {SpecEmu G to Warajevo:germanwara}
+
+SpecEmu-G is emulator by Bernd Washke, from Germany, and uses SEM format.
+
+.topic germanwara
+ ษอออออออออออออออออออออออป
+ บ SPECEMU-G TO WARAJEVO บ
+ ศอออออออออออออออออออออออผ
+
+This option supports conversion of {snapshots:snapfiles} from SpecEmu G to
+{Warajevo:abzxtools}.
+
+SpecEmu-G is emulator by Bernd Washke from Germany, and uses SEM format.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose SEM file name.
+
+After you selected SEM file to be converted, the another file selection dialog
+will prompt you to select output snapshot file (in Warajevo compatible Z80
+format).
+
+.topic waragerman
+ ษอออออออออออออออออออออออป
+ บ WARAJEVO TO SPECEMU-G บ
+ ศอออออออออออออออออออออออผ
+
+This option supports conversion of {snapshots:snapfiles} from
+{Warajevo:abzxtools} to SpecEmu-G.
+
+SpecEmu-G is emulator by Bernd Washke, from Germany, and uses SEM format.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose output SEM file name.
+
+All data about Interface I, SamRam and 128 K features will be ignored.
+
+.topic waraspukvm
+ ษออออออออออออออออออออป
+ บ WARAJEVO TO SP_UKV บ
+ บ SP_UKV TO WARAJEVO บ
+ ศออออออออออออออออออออผ
+
+This submenu supports following conversions:
+
+- {Warajevo to SP_EMU/SP_UKV:waraspukv}
+
+- {SP_EMU/SP_UKV to Warajevo:spukvwara}
+
+SP_EMU/SP_UKV is a pair of unregistered and registered version of the same
+emulator form Russia, author is unknown. It uses standard Z80 and SNA formats,
+but also new SNA 128 format.
+
+.topic spukvwara
+ ษออออออออออออออออออออป
+ บ SP_UKV TO WARAJEVO บ
+ ศออออออออออออออออออออผ
+
+This option supports conversion of SNA 128 {snapshots:snapfiles} from SP_EMU/SP_UKV
+to {Warajevo:abzxtools}.
+
+SP_EMU/SP_UKV is a pair of unregistered and registered version of same
+emulator from Russia, author is unknown. It uses standard Z80 and SNA formats,
+but also new SNA 128 format.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose SNA file name.
+
+After you selected SNA file to be converted, the another file selection dialog
+will prompt you to select output snapshot file (in Warajevo compatible Z80
+format).
+
+.topic waraspukv
+ ษออออออออออออออออออออป
+ บ WARAJEVO TO SP_UKV บ
+ ศออออออออออออออออออออผ
+
+This option supports conversion of {snapshots:snapfiles} from
+{Warajevo:abzxtools} to SP_EMU/SP_UKV.
+
+SP_EMU/SP_UKV is a pair of unregistered and registered version of same
+emulator from Russia, author is unknown. It uses standard Z80 and SNA formats,
+but also new SNA 128 format.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose output SNA 128 file name.
+
+.topic warax128m
+ ษออออออออออออออออออป
+ บ WARAJEVO TO X128 บ
+ บ X128 TO WARAJEVO บ
+ ศออออออออออออออออออผ
+
+This submenu supports following conversions:
+
+- {Warajevo to X128:warax128}
+
+- {X128 to Warajevo:x128wara}
+
+X128 is a 128 K Spectrum emulator, available for DOS, OS/2 and UNIX, current
+author is James McKay. It uses standard Z80 and SNA formats, but also new SLT
+format.
+
+SLT is also supported in WSPECEM and last release of Lunter's Z80 3.05.
+
+.topic x128wara
+ ษออออออออออออออออออป
+ บ X128 TO WARAJEVO บ
+ ศออออออออออออออออออผ
+
+This option supports conversion of SLT snapshots {snapshots:snapfiles}
+firstly used in X128 to {Warajevo:abzxtools}.
+
+X128 is a 128 K Spectrum emulator, available for DOS, OS/2 and UNIX, current
+author is James McKay. It uses standard Z80 and SNA formats,
+but also new SLT format. SLT is also supported in WSPECEM and last release of
+Lunter's Z80 3.05.
+
+SLT format contains current memory state with overlays, and additional data.
+It is the most complex snapshot format. This option will put the memory image
+in Z80 snapshot file, and the overlays in Warajevo {TAP file:tapefiles}.
+Overlays are stored in a way that, for example, overlay with identification
+number 5 will be stored in TAP file as a fifth block. If the SLT file contains
+overlays in non-sequencial order, the fictive blocks will be created.
+See the manual for details about this complex conversion.
+
+When you select this option, you will see {file selection dialogs:fsdialog}
+to choose SLT file name.
+
+After you selected SLT file to be converted, the another file selection dialog
+will prompt you to select output snapshot file (in Warajevo compatible Z80
+format), and the third one that will ask you for the name of the tape file.
+
+.topic warax128
+ ษออออออออออออออออออป
+ บ WARAJEVO TO X128 บ
+ ศออออออออออออออออออผ
+
+This option links the contents of current {snapshot file:snapshots} and
+{tape file:tapefiles}. This option requires that you selected both.
+
+X128 is a 128 K Spectrum emulator, available for DOS, OS/2 and UNIX, current
+author is James McKay. It uses standard Z80 and SNA formats, but also new SLT
+format. SLT is also supported in WSPECEM and last release of Lunter's Z80 3.05.
+
+The contents of the snapshot file will be placed to the beginning of the
+SLT file, while the {blocks} from the tape file will be stored as
+SLT overlays.
+
+To use such snapshot in emulators that support it, you must find the place
+where the program loads levels and insert loading trap code, if the snapshot
+does not already contain it. For more details, see the documentation.
+
+.topic warasnpm
+ ษออออออออออออออออออออออออป
+ บ WARAJEVO TO ZX GARABIK บ
+ บ ZX GARABIK TO WARAJEVO บ
+ ศออออออออออออออออออออออออผ
+
+This submenu supports following conversions:
+
+- {Warajevo to ZX Garabik Snapshot:warasnp}
+
+- {ZX Garabik snapshot to Warajevo:snpwara}
+
+ZX is emulator from Slovakia, author is Radovan Garabik. It uses SNP format.
+
+.topic snpwara
+ ษออออออออออออออออออออออออป
+ บ ZX GARABIK TO WARAJEVO บ
+ ศออออออออออออออออออออออออผ
+
+This option supports conversion of SNP {snapshots:snapfiles} from ZX 3.67 to
+{Warajevo:abzxtools}.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose SNP file name.
+
+After you selected SNP file to be converted, the another file selection dialog
+will prompt you to select output snapshot file (in Warajevo compatible Z80
+format).
+
+.topic warasnp
+ ษออออออออออออออออออออออออป
+ บ WARAJEVO TO ZX GARABIK บ
+ ศออออออออออออออออออออออออผ
+
+ZX is emulator from Slovakia, author is Radovan Garabik. It uses SNP format.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose output SNP file name.
+
+All data about Interface I, SamRam and 128 K features will be ignored.
+
+.topic warasitmm
+ ษอออออออออออออออออออออออออออป
+ บ WARAJEVO TO SPECTRUM 2.00 บ
+ บ SPECTRUM 2.00 TO WARAJEVO บ
+ ศอออออออออออออออออออออออออออผ
+
+This submenu supports following conversions:
+
+- {Warajevo to Spectrum 2.00:warasit}
+
+- {Spectrum 2.00 to Warajevo:sitwara}
+
+Spectrum 2.00 is emulator from Spain, author is Pedro M. R. Salas. It uses
+SIT format.
+
+.topic sitwara
+ ษอออออออออออออออออออออออออออป
+ บ SPECTRUM 2.00 TO WARAJEVO บ
+ ศอออออออออออออออออออออออออออผ
+
+This option supports conversion of SIT {snapshots:snapfiles} from Spectrum 2.00 to
+{Warajevo:abzxtools}.
+
+Spectrum 2.00 is emulator from Spain, author is Pedro M. R. Salas. It uses
+SIT snapshot format, which contains ROM image too.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose SIT file name.
+
+You will then be asked if you want to extract ROM image from snapshot.
+If you choose YES, then in file selection dialog insert name of ROM file where
+you want to extract.
+
+Finally, the another file selection dialog:fsdialog will prompt you to select
+output snapshot file (in Warajevo compatible Z80 format).
+
+.topic warasit
+ ษอออออออออออออออออออออออออออป
+ บ WARAJEVO TO SPECTRUM 2.00 บ
+ ศอออออออออออออออออออออออออออผ
+
+Spectrum 2.00 is emulator from Spain, author is Pedro M. R. Salas. It uses
+SIT snapshot format, which contains ROM image too.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose output SIT file name.
+
+All data about Interface I, SamRam and 128 K features will be ignored.
+
+This option requires ZX48.ROM file, if you want to embed custom ROM in SIT
+snapshot, temporary rename it to ZX48.ROM.
+
+.topic waravaggm
+ ษออออออออออออออออออป
+ บ WARAJEVO TO ZX32 บ
+ บ ZX32 TO WARAJEVO บ
+ ศออออออออออออออออออผ
+
+This submenu supports following conversions:
+
+- {Warajevo to ZX32:waravagg}
+
+- {ZX32 to Warajevo:vaggwara}
+
+ZX32 is emulator from Greece for Windows 95, by Vaggelis Kapartzianis. The
+extension of 'ZX32' file format is ZXT or ZXS, and it may contain tapes,
+snapshots and many other things. This is a complex format.
+
+.topic vaggwara
+ ษออออออออออออออออออป
+ บ ZX32 TO WARAJEVO บ
+ ศออออออออออออออออออผ
+
+Converts {snapshot:snapshots} format from 'ZX32' emulator for Windows 95 by
+Vaggelis Kapartzianis to Warajevo snapshot format. The extension of 'ZX32'
+file format is ZXT or ZXS, and it may contain {tapes:tapefiles}, snapshots and many other
+things. This is a complex format.
+
+When you select this option, on the screen you will see
+{file selecting dialog:fsdialog} for defining name of ZXT/ZXS file.
+
+After you selected ZXT/ZXS file to be converted, the another file selection
+dialog will prompt you to select output snapshot file (in Warajevo compatible
+Z80 format).
+
+All data from 'ZXT' or 'ZXS' file which are related to snapshots will be
+extracted from the file and converted into Z80 format. ZXT (ZXS) format is
+much more complex than TAP format, so many details during conversion will be
+simply ignored.
+
+This conversion does not support compressed ZXT/ZXS format.
+
+.topic waravagg
+ ษออออออออออออออออออป
+ บ WARAJEVO TO ZX32 บ
+ ศออออออออออออออออออผ
+
+Converts {tape files:tapefiles} format from Warajevo to format of
+{ZX32:waravaggm} emulator by Vaggelis Kapartzianis.
+
+When you select this option, you will see {file selection dialog:fsdialog} to
+choose output ZXS file name.
+
+.topic z80z80
+ ษอออออออออออออออออป
+ บ ANY Z80 TO 48K  บ
+ บ ANY Z80 TO 128K บ
+ ศอออออออออออออออออผ
+
+This submenu supports following conversions:
+
+- {Any Z80 snapshot to 48K snapshot:Z8048}
+
+- {Any Z80 snapshot to 128K snapshot:z80128}
+
+The Z80 {snapshot:snapfiles} format is used in Z80 by Gerton Lunter from
+Holland, {Warajevo:abzxtools}, WSpecem, SP_UKV, X128 and Spectator for QL by
+Carlo Delhez.
+
+Warajevo mainly recognizes all Z80 snapshots, but pseudo compiler ZXCOMP
+recognizes only snapshots generated from Warajevo without Interface I. So,
+this option generates snapshots to be just like created with Warajevo without
+option /E.
+
+Also, use this option to ignore additions from Lunter's emulator as SAMRAM, or
+ROM images from snapshots created using emulator by Pedro M. R. Salas which
+cause messages like 'Incorrect hardware version' or 'Incorrect snapshot file'.
+
+.topic z8048
+ ษออออออออออออออออป
+ บ ANY Z80 TO 48K บ
+ ศออออออออออออออออผ
+
+The Z80 {snapshot:snapfiles} format is used in Z80 by Gerton Lunter from
+Holland, {Warajevo:abzxtools} and Spectator for QL by Carlo Delhez. Warajevo
+mainly recognizes all Z80 snapshots, but pseudocompiler ZXCOMP recognizes only
+snapshots generated from Warajevo without Interface I. So, this option
+generates snapshots to be just like created with Warajevo without option /E.
+Also, use this option to ignore additions from Lunter's emulator as SAMRAM, or
+ROM images from snapshots created using emulator by Pedro M. R. Salas which
+cause messages like 'Incorrect hardware version' or 'Incorrect snapshot file'.
+
+The conversion will also ignore all 128 K additions, so it is not absolutely
+sure that program will correctly work on 48K version of emulator.
+
+When you select this option, you must define output file name using
+{file selection dialog:fsdialog}.
+
+.topic z80128
+ ษอออออออออออออออออป
+ บ ANY Z80 TO 128K บ
+ ศอออออออออออออออออผ
+
+The Z80 {snapshot:snapfiles} format is used in Z80 by Gerton Lunter from
+Holland, {Warajevo:abzxtools} and Spectator for QL by Carlo Delhez. Warajevo
+mainly recognizes all Z80 snapshots, but pseudocompiler ZXCOMP recognizes only
+snapshots generated from Warajevo without Interface I. So, this option
+generates snapshots to be just like created with Warajevo without option /E.
+Also, use this option to ignore additions from Lunter's emulator as SAMRAM, or
+ROM images from snapshots created using emulator by Pedro M. R. Salas which
+cause messages like 'Incorrect hardware version' or 'Incorrect snapshot file'.
+
+When you select this option, you must define output file name using
+{file selection dialog:fsdialog}.
+
+.topic snaptap
+ ษออออออออออออออออออป
+ บ SNAPSHOT TO TAPE บ
+ ศออออออออออออออออออผ
+
+This option converts active {snapshot file:snapfiles} to {tape file:tapefiles}.
+
+This conversion requires small loader, it is initially put in video memory.
+If you can find better place in memory, modify values in two
+{input lines:inputline} named 'Startup Routine address' and 'Startup Register
+Stack address'.
+
+Startup routine is 32 bytes long and Startup register stack is 32 or 34 bytes.
+Be careful, avoid zone 23296-24999 for 48 K loaders and 23296-24999 and
+49152-65535 for 128 K loaders, because it is likely that your startup routine
+will be overwriten.
+
+If you can not find other place in memory, consider further destiny of this
+TAP file. If you want to use it only on {Warajevo:abzxtools} or transfer it
+to original Spectrum, select the first radio button. In this case, the routine
+and stack will use only two bottom lines of the screen.
+
+If you want to convert the tape file to Z80 emulator, or any other emulator
+that has trap for headerless ad lower address than Warajevo (for example 1366)
+select the second radio button. The screen damage will be in two bottom lines
+of the screen and in eight from the bottom.
+
+If you want to convert to emulator that supports only loading from Basic (ex.
+Irish, Polish), select the third radio button. In this case, the topmost third
+of the screen will be damaged including bottommost two lines.
+
+If you choose 4th, 5th or 6th radio button, this tape file will not be
+directly usable, but you can copy its contents to MDR file or real microdrive,
+Opus Discovery diskettes, Disciple diskettes or Wafadrive (currently there
+is no emulator for PC that emulates Wafadrive or Opus, while only Z80 emulates
+Disciple).
+
+If you choose 7th radio button, this tape file also will not be directly
+usable, but you can convert it to {TRD format:trdwara} (TR-DOS disk emulation
+format). TAP file, which is produced using this conversion, may be directly
+converted into TRD format without any manual modification of BASIC loader.
+
+After you press {OK button:okbutton}, you must select output tape file name
+using {file selection dialog:fsdialog}. This conversion does not support
+conversion of Timex snapshots yet.
+
+.topic Notimp
+
+This option is not yet implemented.
+
+.topic microdrive
+ ษออออออออออออออออออป
+ บ MDRIVEFILES MENU บ
+ ศออออออออออออออออออผ
+
+This menu is dedicated for manipulations with {cartridge files:cartfiles}.
+
+In this menu you have {Microdrive:microsub} submenu for manipulating with whole
+cartridge file, {Sectors:mdvsectors} submenu for manipulating with invididual
+{sectors} on cartridge, and {Files:mdvfiles} submenu for manipulating with
+invididual {logical files:logfiles} on the cartridge files.
+
+There is also {Convert:mconvert} submenu, for converting Warajevo cartridge
+format into formats of other emulators.
+
+.topic microsub
+ ษอออออออออออออออออออออป
+ บ MICRODRIVES SUBMENU บ
+ ศอออออออออออออออออออออผ
+
+In this submenu there are options for {selecting:mdvsel} and
+{unselecting:munselect} microdrive {cartridge files:cartfiles}, seting
+{default:mdvdef} microdrive, and {formating:mdvformat}, {optimizing:mdvunfrag},
+logical {renaming:mdvrename}, {write protecting:mdvwrprot} and
+{unprotecting:mdvwrunpr} of {microdrive} cartridge files, {viewing:mdvview}
+cartridge contents as a logical list of {sectors}, and making a
+{catalog:mdvcat} of {logical files:logfiles} on a cartridge file.
+
+.topic mdvsel
+ ษอออออออออออออออออออป
+ บ SELECT MICRODRIVE บ
+ ศอออออออออออออออออออผ
+
+Selects the current {cartridge file:cartFiles}. All operations in
+{MdriveFiles menu:microdrive} will be related to it. If selected cartridge
+file does not exist, {unformated:mdvformat} cartridge file will be created.
+
+This option calls {file selecting dialog:fsdialog} to select the file name.
+This {dialog} also contains two additional {input lines:inputline}.
+
+Spectrum allows 8 microdrives, so field 'MDV num' should contain microdrive
+number. This microdrive will be current microdrive. Default value is first
+unselected microdrive. In a {window} with {current file names:abzxtools} current
+microdrive is marked with asterisk.
+
+If you don't want severe problems, you must not select same file into two
+different microdrives. It may cause data damage.
+
+If you want to create new cartridge file, field 'Sectors' must contains wanted
+number of {sectors} into file (default is 254). If you select 254, created file
+will be compatibile with Lunter's Z80 emulator.
+
+.topic munselect
+ ษอออออออออออออออออออออป
+ บ UNSELECT MICRODRIVE บ
+ ศอออออออออออออออออออออผ
+
+Cancels {selection:mdvsel} of the {cartridge file:cartfiles}.
+
+.topic mdvdef
+ ษออออออออออออออออออออป
+ บ DEFAULT MICRODRIVE บ
+ ศออออออออออออออออออออผ
+
+This option allows {selecting:mdvsel} of active microdrive. All operations in
+{MdriveFiles menu:microdrive} will be related to it.
+
+This option will open {dialog} with one {input line:inputline},
+{OK button:okbutton} and {Cancel button:cancelbutton}. You must type microdrive
+number in the input line.
+
+.topic mdvformat
+ ษอออออออออออออออออออป
+ บ FORMAT MICRODRIVE บ
+ ศอออออออออออออออออออผ
+
+Formats (e.g. logically prepare for using) current {microdrive file:cartfiles},
+like by using FORMAT command from BASIC.
+
+This option will open {dialog} with one {input line:inputline},
+{OK button:okbutton} and {Cancel button:cancelbutton}. You must type cartridge
+logical name in the input line.
+
+Warning: this operation will erase contents of the cartridge.
+
+.topic mdvunfrag
+ ษออออออออออป
+ บ OPTIMIZE บ
+ ศออออออออออผ
+
+Optimizes {cartridge file:cartfiles}, e.g. rearanges {sectors} so that
+optimized file has minimum access time to all {logical files:logfiles} on it.
+
+You must confirm this operation pressing {OK button:OKbutton} or cancel
+operation pressing {Cancel button:cancelbutton} in a {dialog}. Original file
+will be saved with extension .BAK.
+
+.topic mdvview
+ ษอออออออออออออออออป
+ บ VIEW MICRODRIVE บ
+ ศอออออออออออออออออผ
+
+View the contents of the current {cartridge file:TapeFiles} as a logical list
+of {sectors}. Sector can be unallocated, unformatted (or bad) or allocated. In
+the last case, one {logical file:logfiles} on a cartridge usually occupies
+several sectors. If the sector is formatted and good, logical number of the
+sector will be displayed.
+
+This option for any allocated sector will display name of the file allocated in
+the sector, which {record:recnum} of the file is allocated in the sector (zero
+based), type of the file (PRINT file, or non-PRINT file), and, for non-PRINT
+files, subtype of the non-PRINT files (BASIC, CODE etc.) but only if record
+number is zero (only record 0 contains such information). Finally, for EOF
+records symbol EOF will be displayed too.
+
+For the adjusting of unformatted or bad sectors you can use {Verify:mdvsverify}
+option from {Sectors:mdvsectors} submenu. Sometimes it will not be enough. In
+such case, only {format:mdvformat} or {editing:mdvsedit} whole sector area will
+help.
+
+The {dialog} for viewing contains simple {list box:listbox} with informations
+about sectors of the cartridge file and the {OK button:OKbutton}.
+
+.topic mdvrename
+ ษอออออออออออออออออออป
+ บ RENAME MICRODRIVE บ
+ ศอออออออออออออออออออผ
+
+Logically renames current {microdrive file:cartfiles}, e.g. changes name given
+using {Format:mdvformat} command.
+
+This option will open {dialog} with one {input line:inputline},
+{OK button:okbutton} and {Cancel button:cancelbutton}. You must type new
+logical name in the input line.
+
+.topic mdvwrprot
+ ษอออออออออออออออป
+ บ WRITE PROTECT บ
+ ศอออออออออออออออผ
+
+Makes current {microdrive file:cartfiles} write protected by changing its file
+attribute to read-only.
+
+.topic mdvwrunpr
+ ษอออออออออออออออออป
+ บ WRITE UNPROTECT บ
+ ศอออออออออออออออออผ
+
+Remove {write protection:mdvwrprot} from a current {microdrive file:cartfiles}
+by changing its file atribute to read&write.
+
+.topic mdvsectors
+ ษออออออออออออออออออออออออออออป
+ บ MICRODRIVE SECTORS SUBMENU บ
+ ศออออออออออออออออออออออออออออผ
+
+This submenu allows manipulations with individual {sectors} on
+{cartridge files:cartfiles} like {verifying:mdvsverify} logical structure of
+the sectors and {editing:mdvsedit} contents of the sectors.
+
+.topic mdvsverify
+ ษอออออออออออออออป
+ บ VERIFY SECTOR บ
+ ศอออออออออออออออผ
+
+This option is similar to the {View:mdvview} option in the
+{Microdrives:microsub} menu, but now you can verify or adjust logical structure
+of the {sector:sectors}.
+
+Select sector using {list box:listbox} then press {OK button:okbutton}. You
+will see message which says that sector is OK, or, if sector is bad, dialog
+which allows to correct sector by pressing OK button or leaves sector unchanged
+by pressing {Cancel button:cancelbutton}.
+
+.topic mdvsedit
+ ษอออออออออออออป
+ บ EDIT SECTOR บ
+ ศอออออออออออออผ
+
+This option allows editing of individual {sectors} in a
+{cartridge file:cartfiles}.
+
+You can see on screen {dialog} with {list box:listbox}, one group of
+{radio buttons:radiobutton}, {OK button:okbutton} and
+{Cancel button:cancelbutton}. Radio buttons determines do you want editing only
+data part of the sector, or whole sector including system information and
+checksums. In the last case, you can damage logical structure of the sector. If
+it happens, try to use {Verify:mdvsverify} option in the
+{sectors submenu:mdvsectors} to adjust damaged sector.
+
+It is very dangerous to edit whole sector area if you don't know exactly what
+you are doing.
+
+You must first select sector (sectors will be described like in {View:mdvview}
+option in the {Microdrives:microsub} submenu) using the list box. After
+pressing OK button, the {Editor dialog:edidiag} will appear on screen.
+
+.topic mdvfiles
+ ษออออออออออออออออออออออออออป
+ บ MICRODRIVE FILES SUBMENU บ
+ ศออออออออออออออออออออออออออผ
+
+This submenu allows manipulations with {logical files:logfiles} on
+{cartridge files:cartfiles} like {deleting:mdvfdelete}, {renaming:mdvfrename},
+{hiding:mdvfhide}, {unhiding:mdvfunhide} and {copying:mdvfcopy} files from one
+cartridge to another.
+
+.topic mdvcat
+ ษออออออออออออออออออออป
+ บ MICRODRIVE CATALOG บ
+ ศออออออออออออออออออออผ
+
+List the catalog of the {logical files:logfiles} on the
+{cartridge file:cartfiles}. The {dialog} for viewing contains simple
+{list box:listbox} with list of the logical files on the cartridge file and the
+{OK button:OKbutton}.
+
+Non-PRINT files are displayed on similar way like {headers:header} on a
+{tape file:tapefiles} with options from {TapeFiles menu:tfiles}. PRINT files
+has only file name in the list, and sign 'PRINT file'.
+
+.topic mdvfdelete
+ ษอออออออออออออป
+ บ DELETE FILE บ
+ ศอออออออออออออผ
+
+Deletes a {logical file:logfiles} from the {cartridge file:cartfiles}.
+
+You can see on screen {dialog} with one {list box:listbox},
+{OK button:okbutton} and {Cancel button:cancelbutton}. Using the list box
+select file which will be deleted, then press OK button.
+
+.topic mdvfrename
+ ษอออออออออออออป
+ บ RENAME FILE บ
+ ศอออออออออออออผ
+
+This option changes name of a {logical file:logfiles} on the
+{cartridge file:cartfiles}.
+
+You can see on screen {dialog} with one {list box:listbox},
+{OK button:okbutton}, {input line:inputline} and {Cancel button:cancelbutton}.
+Using the list box select file which will be renamed, enter new name in input
+line then press OK button.
+
+.topic mdvfhide
+ ษอออออออออออป
+ บ HIDE FILE บ
+ ศอออออออออออผ
+
+Command CAT from BASIC will not display names of files which have CHR$ 0 as
+first character of name. This option changes name of selected
+{logical file:logfiles} by appending CHR$ 0 at beginning of name, so this file
+will be invisible for CAT command.
+
+You can see on screen {dialog} with one {list box:listbox},
+{OK button:okbutton} and {Cancel button:cancelbutton}. Using the list box
+select file which will be hidden, then press OK button.
+
+.topic mdvfunhide
+ ษอออออออออออออป
+ บ UNHIDE FILE บ
+ ศอออออออออออออผ
+
+This option makes {hidden:mdvfhide} file visible again.
+
+You can see on screen {dialog} with one {list box:listbox},
+{OK button:okbutton} and {Cancel button:cancelbutton}. Using the list box
+select file which will be visible again, then press OK button.
+
+.topic mdvfcopy
+ ษอออออออออออป
+ บ COPY FILE บ
+ ศอออออออออออผ
+
+This option allows copying {logical files:logfiles} from one
+{cartridge file:cartfiles} to another.
+
+You can see on screen {dialog} with one {list box:listbox},
+{OK button:okbutton}, {input line:inputline} and {Cancel button:cancelbutton}.
+Select file which will be copied, enter destination {microdrive} in input line
+then press OK button.
+
+This option will delete file with same name on the destination cartridge file
+if such file exists.
+
+.topic mconvert
+ ษออออออออออออออออออออออออออออป
+ บ MICRODRIVE CONVERT SUBMENU บ
+ ศออออออออออออออออออออออออออออผ
+
+In this moment, Convert submenu into {Microdrive files:microdrive} submenu
+has only one option:
+
+- Enlarge MDR to 254 sectors
+
+This option enlarges active {MDR file:cartfiles} to 254 {sectors}, so it will
+become compatible with Lunter Z80 emulator. Newly created sectors will not be
+{formated:mdvformat}.
+
+.topic database
+ ษอออออออออออออออป
+ บ DATABASE MENU บ
+ ศอออออออออออออออผ
+
+This menu is dedicated for manipulating with data base about Spectrum software.
+
+In this menu there are submenus and options for selecting
+{database directory:dbfdir}, {running:dbrun} Spectrum programs from data base,
+{editing and browsing:editbase} data base, {sorting:sortbase} data base,
+{marking:markbase} records in the database, creating {reports:izvjbase} from
+database, and {converting:dbconvert} Warajevo database to and from other
+Spectrum related databases.
+
+Program must make some preparations for using a data base, so when you first
+time use option from this menu, there will be some delay before their
+execution.
+
+.topic dbfdir
+ ษออออออออออออออออออออออออออออป
+ บ DATABASE DIRECTORY SUBMENU บ
+ ศออออออออออออออออออออออออออออผ
+
+This menu is dedicated for {selecting:dbselect} data base directory. This
+allows to you having more than one {data base:database} (in different
+directories) on disk. (We recommend splitting in several databases,
+if you have more than 5000 records, to avoid overuse of memory.)
+
+In this menu there is also {unselect:dbunselect} option for canceling selection
+and returning to default database directory.
+
+.topic dbselect
+ ษอออออออออออออออออออออออออออป
+ บ SELECT DATABASE DIRECTORY บ
+ ศอออออออออออออออออออออออออออผ
+
+Selects data base directory. All options from {DataBase:database} menu will be
+related to data base in this directory.
+
+The Select Database {dialog} box consists of an {input box:inputline}, a
+{list box:listbox}, the standard {OK:okbutton} button, and two other buttons
+(Chdir and Revert).
+
+ ฺ Directory Name ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ
+ ณ                                     ณ
+ ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+
+The Directory Name {input box:inputline} is place where you type in the path of
+the new directory.
+
+ ฺ Directory Tree ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ
+ ณ   Drives                            ณ
+ ณ   ภฤยC:\                            ณ
+ ณ     ภฤยWINDOWS                      ณ
+ ณ       ภฤฤSYSTEM                     ณ
+ ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+
+The Directory Tree list box enables you to move through directories by using
+the selecting bar and pressing Enter.
+
+If you're using the keyboard, press Enter to make the selected directory be the
+current directory, then choose OK or press Esc to exit the dialog box.
+
+The Chdir button changes the current directory once you've selected or typed in
+a directory name.
+
+The Revert button goes back to the previous directory, as long as you haven't
+yet exited the dialog box.
+
+.topic dbunselect
+ ษอออออออออออออออออออออออออออออป
+ บ UNSELECT DATABASE DIRECTORY บ
+ ศอออออออออออออออออออออออออออออผ
+
+Cancels {selection:dbselect} of {data base:database} directory. After this
+option active data base will be data base in the same directory as the
+environment.
+
+.topic dbrun
+ ษออออออออออออออออออออออออออออป
+ บ RUN PROGRAM FROM DATA BASE บ
+ ศออออออออออออออออออออออออออออผ
+
+This option opens a dialog with one {list box:listbox} called Database
+{file viewer:editbase}, buttons 'Run' and 'Select', and
+{Cancel button:cancelbutton}.
+
+You must first select wanted Spectrum program using list box. Then you have two
+possibilities:
+
+- If you select 'Select' button, all data associated with this program like
+tape/snapshot/cartridge name, directory, command parameters etc. will be
+activated, but you will not leave environment after this.
+
+- If you select 'Run' button, all data associated with this program will be
+activated too, but emulator will be immediately executed with automatic loading
+and running selected program.
+
+.topic editbase
+ ษออออออออออออออออออออออออออออออออป
+ บ EDITING AND BROWSING DATA BASE บ
+ ศออออออออออออออออออออออออออออออออผ
+
+When you select this option, a {dialog} with one {list box:listbox} called
+Database file viewer, and five buttons called 'Edit', 'Append', 'Delete',
+'Seek' and 'Close' will appear.
+
+If {data base:database} is not empty, you can see that every record in the list
+box (of course, one line in the list box is one record in the data base) is
+divided (using vertical lines) to 9 fields. This fields are called (from left
+to right) {Short name:fshname}, {Full name:ffullname}, Software
+{producer:fproducer} or distributer, {Category:fcategory} of the program,
+{Year:fyear} of the production, {Machine type:fmachine}, Message
+{language:flanguage}, {File name:ftapename} and {Position:fposition}.
+
+In a data base there are also some fields which will not be displayed in the
+list box when you browse through data base, but only during
+{editing:editrecord} of a record. These fields are {Command line:fcomline},
+{Sort marker:fsortmarker}, {Remark:fremark} and {Problems:fproblems}.
+
+You can use {Edit:editrecord} button to edit current (highlighted) record, or
+{Append:editrecord} button to create a new record.
+
+If you want to delete current record, use Delete button.
+
+Button Seek allows fast {seeking:seek} to the records in the data base.
+
+Button Close simply closes browsing dialog, like {Cancel button:cancelbutton}
+in many other options. Esc key has same meaning.
+
+.topic editrecord
+ ษออออออออออออออออออออออออออออออป
+ บ EDITING OR CREATING A RECORD บ
+ ศออออออออออออออออออออออออออออออผ
+
+When you want to edit or create {record:editbase} in a {data base:database}, a
+very large {dialog} appears on screen.
+
+Fields {Short name:fshname}, {Full name:ffullname}, {Year:fyear},
+{Position:fposition} and {Command parameters:fcomline} may be entered using
+{input lines:inputline}.
+
+Field {Machine type:fmachine} may be set using one group of the
+{radio buttons:radiobutton}.
+
+Field {Sort marker:fsortmarker} may be set using a {checkbox:chkbox}. Field
+{Problems:fproblems} may be set also using a checkbox, but activating this
+checkbox will open a second dialog which allows detailed setting of this field.
+This dialog contains brief {explanation:expproblem} of a possible problems.
+
+Field {Remark:fremark} may be entered using a little text editor.
+
+Fields Software {producer:fproducer} or distributer, Program
+{category:fcategory} and Message {language:flanguage} may be entered using a
+{list boxes:listbox} which contain data typed earlier. If you want to select
+existing data, simply move highlight to it. Sometimes, it is faster to type
+first few letters of the item you want to reach. But if you want to enter new data
+(this is only solution when data base is empty), press Insert key and type in
+required data. If you want to edit earlier entered data, highlight it, then
+press right arrow. You will enter edit mode. If you want to delete highlighted
+item, press Delete key.
+
+Field {File name:ftapename} may be entered or changed on a same way, but
+editing will open a new dialog for description of data
+{linked with a file:edtapes}.
+
+After you entered or modified the record, use {OK button:okbutton} to accept
+changes, or {Cancel button:cancelbutton} to throw away changes.
+
+.topic fshname
+ ษออออออออออออออออออป
+ บ SHORT NAME FIELD บ
+ ศออออออออออออออออออผ
+
+This field contains short name of the Spectrum program. Short name is important
+when you run environment from DOS giving this name as a parameter. For example,
+if you type
+
+ WARAJEVO ATICATAC
+
+program will search for {record:editbase} with short name 'ATICATAC', run
+emulator, and automatically load and run program 'Atic Atac' using other data in
+this record.
+
+This field must not be empty.
+
+.topic ffullname
+ ษอออออออออออออออออป
+ บ FULL NAME FIELD บ
+ ศอออออออออออออออออผ
+
+Field {Short name:fshname} is limited to 10 characters, so it can not be enough
+descriptive. Field Full name contains full program name.
+
+This field must not be empty.
+
+.topic fcategory
+ ษออออออออออออออออป
+ บ CATEGORY FIELD บ
+ ศออออออออออออออออผ
+
+This field of the {record:editbase} contains category of Spectrum program (for
+example, Arcade adventure, Logical game, Utility program, etc.).
+
+.topic fproducer
+ ษออออออออออออออออป
+ บ PRODUCER FIELD บ
+ ศออออออออออออออออผ
+
+This field of the {record:editbase} contains name of company which produce or
+distribute Spectrum program (Ultimate, for example).
+
+.topic fmachine
+ ษอออออออออออออออป
+ บ MACHINE FIELD บ
+ ศอออออออออออออออผ
+
+This field of the {record:editbase} contains computer type which Spectrum
+program needs. This field may contain '16', '48', '2068', '128', '+2', '+3' or
+'SAM' (the last means Sam Coupe).
+
+If this field contains '16' or '48', 48K type of the emulator will be executed
+when you {run:dbrun} this program from {data base:database}. If this field
+contains '2068', Timex type of the emulator will be executed. In all other
+cases, 128K type of the emulator will be executed.
+
+Emulations of Spectrum +3 and Sam Coupe are not yet implemented.
+
+.topic flanguage
+ ษออออออออออออออออป
+ บ LANGUAGE FIELD บ
+ ศออออออออออออออออผ
+
+This field of the {record:editbase} contains language on which program messages
+are displayed (English or Spain, for example).
+
+.topic ftapename
+ ษออออออออออออออออป
+ บ FILENAME FIELD บ
+ ศออออออออออออออออผ
+
+This field is very important. It contains name of a {tape file:tapefiles} (or
+{snapshot file:snapfiles}, and even {cartridge file:cartfiles}) on which
+Spectrum program is located.
+
+This field of the {record:editbase} is linked with the descriptor which
+describe is it tape, snapshot or microdrive file, and on which disk and
+directory is this file located. This descriptor will be created when you
+{edit:edtapes} this field.
+
+This field may be empty only if you don't want {running:dbrun} programs from
+the {data base:database}.
+
+.topic fposition
+ ษอออออออออออออออออออออป
+ บ TAPE POSITION FIELD บ
+ ศอออออออออออออออออออออผ
+
+This field is related to {File name:ftapename} field. It is used to determining
+position of Spectrum program {block:blocks} in a {tape file:tapefiles} if you
+want {running:dbrun} programs from tape files using {data base:database}.
+
+.topic fyear
+ ษออออออออออออออออออออออออออป
+ บ YEAR OF PRODUCTION FIELD บ
+ ศออออออออออออออออออออออออออผ
+
+This field of the {record:editbase} contains the year when progam is produced.
+
+.topic fremark
+ ษออออออออออออออป
+ บ REMARK FIELD บ
+ ศออออออออออออออผ
+
+This field will not be displayed in the {list box:listbox} when you
+{browse:editbase} through {data base:database}, but only during
+{editing:editrecord} of a record.
+
+This field should contain some additional remarks about Spectrum program (for
+example, POKE for infinite lives in some game, hints for solving game, etc.).
+Entered text may have length up to 512 bytes.
+
+Field Remark may be edited using a little embedded ASCII screen editor. In
+additions to standard cursor moving, editor understands many editing commands
+seen in Borland compilers (like in Turbo Pascal 6.0.).
+
+.topic fsortmarker
+ ษอออออออออออออออออออป
+ บ SORT MARKER FIELD บ
+ ศอออออออออออออออออออผ
+
+This field will not be displayed in the {list box:listbox} when you
+{browse:editbase} through {data base:database}, but only during
+{editing:editrecord} of a record.
+
+This field may have only one of two states: marked or unmarked. If record is
+{marked:markbase}, this record will be logically move to end of data base,
+regardless of current {sorting:sortbase} method.
+
+.topic fproblems
+ ษออออออออออออออออป
+ บ PROBLEMS FIELD บ
+ ศออออออออออออออออผ
+
+This field will not be displayed in the {list box:listbox} when you
+{browse:editbase} through {data base:database}, but only during
+{editing:editrecord} of a record.
+
+This field should contain coded description of problems which may appear with
+Spectrum program (flickering, for example) during emulation.
+
+If you try to change this field, a {dialog} appears which allows detailed
+setting of this field. This dialog contains breef {explanation:expproblem} of a
+possible problems.
+
+.topic fcomline
+ ษออออออออออออออออออออป
+ บ COMMAND LINE FIELD บ
+ ศออออออออออออออออออออผ
+
+This field will not be displayed in the {list box:listbox} when you
+{browse:editbase} through {data base:database}, but only during
+{editing:editrecord} of a record.
+
+In this field you can enter command parameters (for example, /JK /%80) which
+are needed with the Spectrum program for correct emulation. This parameters
+will be used when you want to {run:dbrun} this program using a data base.
+
+.topic edtapes
+ ษออออออออออออออออออออออออออออออออออออออออป
+ บ EDITING TAPES/SNAPSHOTS/MDV FILES DATA บ
+ ศออออออออออออออออออออออออออออออออออออออออผ
+
+{Dialog} for {editing:editrecord} data linked with field {File name:ftapename}
+contains four {input lines:inputline}, one group of
+{radio buttons:radiobutton}, and buttons 'Browse', 'OK' and 'Cancel'.
+
+Using radio buttons you can select is the current Spectrum program locate on
+{tape file:tapefiles}, {snapshot file:snapfiles}, {cartridge file:cartfiles}
+or in some non-Warajevo format (option 'Full name in Path field').
+
+Input line 'File name' must contain name of the TAP (Z80, MDR) file.
+
+Input line 'Path' must contain drive and directory on which assigned file is
+located. With option 'Full name in Path field' input line 'Path' must contain
+not only path, but full file name including path and extension, and in this
+case name in 'File name' field is only an alias name.
+
+Input line 'Volume label' may optionally contains diskette name if the program
+is located on a floppy disc. This allows to the emulator to produce error
+message if you enter wrong diskette into the drive when you try to {run:dbrun}
+program using the {data base:database}.
+
+In input line which is located after 'Input name' field, and which is marked
+with round brackets, you may optionally type internal two-character
+identification code, which allows you to have 2 files with same name (in
+different directories or on different discs). This is needed due to field
+'File name' is key field, that's why it must be unique. So, we append on this
+field an identification code, which makes this field unique when file names
+are equal.
+
+Button 'Browse' automatizes entering the fields in this dialog using
+{file selection dialog:fsdialog}.
+
+.topic expproblem
+ ษอออออออออออออออออออออออป
+ บ EXPLAINING OF PROBLEM บ
+ ศอออออออออออออออออออออออผ
+
+When you try to edit {Problems:fproblems} field, you can see {dialog} with one
+group of {checkboxes:chkbox}, {OK button:okbutton} and
+{Cancel button:cancelbutton}.
+
+Using checkboxes you can mark which problems appear with the current program
+(e.g. program described in the current {record:editbase}). There are 14
+checkboxes for 14 categories of possible problems (some problems should never
+appear if there is no severe bug in emulator). For example, if you think that
+sound is bad in the current program, set 'Sound unrecognizable' chechbox.
+
+.topic sortbase
+ ษออออออออออออออออออป
+ บ SORTING DATABASE บ
+ ศออออออออออออออออออผ
+
+{Data base:database} can be sorted by various {fields:editbase}. If you don't
+use 'Sort' option (or don't use parameter /&O in DEFAULT.CFG file) data base
+will be sorted only by {Short name:fshname} field. Using this option you can
+define other sorting criteria.
+
+When you select this option, you will se a {dialog} with one group of
+{checkboxes:chkbox}, one dummy {input line:inputline} called 'Sorting order',
+{OK button:okbutton} and {Cancel button:cancelbutton}.
+
+Using checkboxes select fields on which data base will be sorted. Order of
+setting checkboxes is important (for example, if you first set 'Category' then
+'Full name', data base will be sorted first using {Category:fcategory} field,
+then by {Full name:ffullname} field).
+
+For helping what you are exactly doing, dummy input line 'Sorting order' will
+display current sorting order, using following abbreviations:
+
+ S - Short name
+ F - Full name
+ P - Software producer or distributor
+ C - Category of the program
+ Y - Year of production
+ M - Computer type
+ L - Message language
+ T - Tape name and position
+
+.topic markbase
+ ษอออออออออออออออออออออออป
+ บ MARK DATABASE SUBMENU บ
+ ศอออออออออออออออออออออออผ
+
+Every {record:editbase} in the {data base:database} contains also
+{Sort marker:fsortmarker} field. If this field of the record is set (we say
+that this record is marked), this record will be logically moved to end of data
+base, (regardless of position where this record needs be normally located).
+Using marking you can put records which are not used often to end of data base.
+
+Using marking you can also select which records will be included in a
+{report:izvjbase}.
+
+In this submenu there are options for {marking:bmarkcond} records which will
+satisfied some conditions, {swaping:bswapmark} markers and for
+{unmarking:bunmark} all records in the data base.
+
+.topic bmarkcond
+ ษออออออออออออออออออป
+ บ MARK CONDITIONAL บ
+ ศออออออออออออออออออผ
+
+This option allows setting {sort marker:fsortmarker} in the {records:editbase}
+which look like entered mask.
+
+This option will open a {dialog} with {input lines:inputline},
+{OK button:okbutton} and {Cancel button:cancelbutton}. Every input line is
+assigned with one field in the record, like with {seek} option.
+
+After selecting OK button, all records which looks like entered mask will be
+marked, (e.g. logically moved to end of the database). Wildcards ? and * are
+allowed (with meaning like in DOS). For example, if you want to mark all
+adventure games which full name start with letter M, enter 'Adventure' in
+'Category' input line and 'M*' in 'Full name' input line, then select OK
+button.
+
+.topic seek
+ ษออออออออออออออออป
+ บ SEEK TO RECORD บ
+ ศออออออออออออออออผ
+
+Button Seek allows fast seeking to any desired {record:editbase} in the
+{data base:database}.
+
+This option will open a {dialog} with {input lines:inputline},
+{OK button:okbutton} and {Cancel button:cancelbutton}. Every input line is
+assigned with one field in the record.
+
+You must enter only lines assigned to fields which you want use for seeking,
+and other lines may be empty. Wildcards ? and * are allowed (with meaning like
+in DOS). After activating OK button, you will be moved to the first record with
+structure like entered structure. For example, if you want to move to record
+with short name PENETRATOR, you may enter PEN* in the input line 'Short name'
+then select OK button.
+
+.topic bswapmark
+ ษอออออออออออป
+ บ SWAP MARK บ
+ ศอออออออออออผ
+
+This option will mark unmarked {records:editbase} and unmark marked records.
+For example, if you want to organize {data base:database} with adventure games
+at the BEGINING of the data base, first {mark:bmarkcond} all such records
+(this will move such records to the END of the database), then using this
+option swap markers.
+
+.topic bunmark
+ ษออออออออออออป
+ บ UNMARK ALL บ
+ ศออออออออออออผ
+
+This option simply unmarks all {marked:markbase} records in the data base.
+
+.topic izvjbase
+ ษอออออออออออออออออป
+ บ DATABASE REPORT บ
+ ศอออออออออออออออออผ
+
+This option will create report of the files in the {data base:database}, which
+may be printed on printer, screen and to the disk file. The {dialog} for this
+option consists one group of {checkboxes:chkbox}, three group of
+{radio buttons:radiobutton}, three {input lines:inputline},
+{OK button:okbutton} and {Cancel button:cancelbutton}.
+
+Using checkboxes you can select which {fields:editbase} will be included in the
+report. In the report each record will be printed in the new line. If you
+select too many fields in the report, some fields may be cutted (due to limited
+paper width) but optimally. If you include {Problems:fproblems} field in the
+report, problems will be printed as the coded string. Characters in the string
+have following meaning:
+
+ F - Flickering
+ S - Too slow on Herc/CGA/EGAMono
+ V - Too slow on EGA/VGA
+ H - Bad Herc/CGA/EGAMono shades
+ N - Sound not recognizable
+ I - Hangs up or resets without /I
+ R - Hangs up or resets even with /I
+ L - If hangs, can not help F9, F10
+ B - Border flickers too much
+ T - Tape emulation problems
+ A - Interface emulation problems
+ M - Exits with message
+ O - Problem not listed here
+ ! - Can't work even theoretically
+
+Input lines 'Paper length' and 'Printable lines' should contain paper length in
+lines (default 72) and the number of effectively printed lines on the paper
+(default 66). Line 'Report width' should contain number of characters in one
+row.
+
+Using one group of radio buttons you can select output device (if you select
+screen, you can {browse:scrreport} through report {window} on the screen).
+Using second group you can select do you want printing all records, only
+{marked:markbase} records or only unmarked records. Third group, named 'Printer
+type' selects type of the printer. It selects, in fact, necessary control
+codes, and maximal usable report width. If you select ASCII printer, control
+codes will not be sent. Maximal usable report widths in characters are:
+
+  80 for ASCII A4
+         Epson A4 Pica
+         HP LasetJet Courier
+ 132 for ASCII A3
+         Epson A3 Pica
+         Epson A4 Compressed
+         HP LaserJet Compresses
+ 160 for Epson A4 Elite Compressed
+ 200 for Epson A3 Compressed
+ 255 for Epson A3 Elite Compressed
+
+.topic scrreport
+ ษอออออออออออออออออออออออออออออออออออป
+ บ BROWSING THROUGH REPORT ON SCREEN บ
+ ศอออออออออออออออออออออออออออออออออออผ
+
+When you select making a {report:izvjbase} to the screen, you will see standard
+{window} on the screen which contains preview of the report. You can move
+through report window on same way like with other windows. The only difference
+is in fact that window content will be reprinted each time when you make a
+movement, instead of pure scrolling.
+
+.topic dbconvert
+ ษอออออออออออออออออออออป
+ บ DATABASE CONVERTING บ
+ ศอออออออออออออออออออออผ
+
+This submenu contains options for converting of Warajevo {data base:database}
+into other database formats dedicated to ZX Spectrum, including:
+
+- {SPECPIC:specpicwara}, by Andreas Schrapnel and Jahn Claus from Germany;
+
+- {SGD:sgdwara}, by Martijn Van Der Heidne from Holland;
+
+- {ZX RAINBOW:rainbowwara}, by Jahn Claus from Germany.
+
+- {SPECBASE:specbasewara}, by Rodolfo Edison Guerra from Urugvay.
+
+During conversions, all particularities of the source data base which are not
+supported in the destination data base, will be simply ignored.
+
+.topic waraspecpic
+ ษอออออออออออออออออออออป
+ บ WARAJEVO TO SPECPIC บ
+ ศอออออออออออออออออออออผ
+
+Active {Warajevo data base:database} will be converted into
+{SpecPic:specpicwara} database format which consists of 8 files with fixed
+names and .TBL extension.(DATABASE.TBL, PROGNAME.TBL, SPECIALS.TBL,
+PROGTYPE.TBL, PRODUCER.TBL, AUTHORS.TBL, COUNTRY.TBL, PROGPATH.TBL).
+Conversion of Warajevo Database is obvious, though that Command line field
+is moved to SPECIALS.TBL, AUTHORS.TBL and PRODUCER.TBL are the same, while
+volume label of file is ignored.
+
+You must confirm selection of this option. Eventual previous SpecPic database
+will be erased.
+
+.topic specpicwara
+ ษอออออออออออออออออออออป
+ บ SPECPIC TO WARAJEVO บ
+ ศอออออออออออออออออออออผ
+
+SpecPic is database program by Andreas Schrapnel and Jahn Claus. It uses 6
+files with fixed names and .TBL extension.
+
+Before using this option, you must be located in the {directory:cd} which
+contains SpecPic data base. Converted data base will be appended on active
+{Warajevo data base:database}.
+
+.topic warasgd
+ ษอออออออออออออออออป
+ บ WARAJEVO TO SGD บ
+ ศอออออออออออออออออผ
+
+Active {Warajevo data base:database} will be converted into
+{SGD database:sgdwara} which is stored in file GAMES.DAT. User must confirm
+selection of this option. Eventual previous SGD base will be erased.
+
+SGD database format doesn't contain data about {program paths:ftapename},
+so they will be ignored. Also, {'Category' field:fcategory} will be truncated
+to 7 characters due to limitations of SGD format. Language field is not
+converted as we support 1.24 release (it was introduced in 1.32 version).
+Command line field is checked for joystick items.
+
+Author of the SGD format very often changes database format from release to
+release. Currently, we convert to format of release 1.24. The older versions
+probably will not be able to read this format, but fortunately, new
+versions can automatically upgrade from previous versions.
+
+.topic sgdwara
+ ษอออออออออออออออออป
+ บ SGD TO WARAJEVO บ
+ ศอออออออออออออออออผ
+
+SGD is database program by Martijn Van Der Heidne from Holland. It uses DAT
+file (usualy GAMES.DAT for keeping database records).
+
+Using a {file selection dialog:fsdialog} select name of DAT file (SGD data
+base) which you want to convert. Converted data base will be appended on
+active {Warajevo data base:database}.
+
+This conversion also looks content of the SGD file SGD.INI and its GameDir
+property, to determine {paths:ftapename} to programs which are described into
+database.
+
+Author of the program SGD changes very often database format from release to
+release. The received data depends from version of DAT file.
+We read data up to version 1.32.
+
+For very big databases, this conversion may take a lot of time (15 minutes or
+more).
+
+.topic wararainbow
+ ษออออออออออออออออออออออออป
+ บ WARAJEVO TO ZX RAINBOW บ
+ ศออออออออออออออออออออออออผ
+
+Active {Warajevo data base:database} will be converted into
+{ZX Rainbow:rainbowwara} database format which consists of 10 files with fixed
+names and .TBL extension.(DATABASE.TBL, PROGNAME.TBL, SPECIALS.TBL,
+PROGTYPE.TBL, PRODUCER.TBL, AUTHORS.TBL, COUNTRY.TBL, PROGPATH.TBL, STARTUP.TBL
+and VOLUMES.TBL).
+
+Conversion of Warajevo Database is obvious, though that AUTHORS.TBL and
+PRODUCER.TBL are the same.
+
+Previous ZX Rainbow database will be erased.
+
+.topic rainbowwara
+ ษออออออออออออออออออออออออป
+ บ ZX RAINBOW TO WARAJEVO บ
+ ศออออออออออออออออออออออออผ
+
+ZX Rainbow is database program by Jahn Claus. It uses 8 files with fixed names
+and .TBL extension.
+
+Before using this option, you must be located in the {directory:cd} which
+contains ZX Rainbow data base. Converted data base will be appended on active
+{Warajevo data base:database}.
+
+.topic waraspecbase
+ ษออออออออออออออออออออออป
+ บ WARAJEVO TO SPECBASE บ
+ ศออออออออออออออออออออออผ
+
+Active {Warajevo data base:database} will be converted into
+{SpecBase:specbasewara} database format which consists of files SPECBASE.DBF
+and SPECBASE.DBT.
+
+You must confirm selection of this option. Eventual previous SpecBase database
+will be erased.
+
+.topic specbasewara
+ ษออออออออออออออออออออออป
+ บ SPECBASE TO WARAJEVO บ
+ ศออออออออออออออออออออออผ
+
+SpecBase is database program by Rodolfo Edison Guerra. It uses 2 files with
+SPECBASE.DBF and SPECBASE.DBT.
+
+Before using this option, you must be located in the {directory:cd} which
+contains SpecBase data base. Converted data base will be appended on active
+{Warajevo data base:database}.
+
+.topic setup
+ ษออออออออออออป
+ บ SETUP MENU บ
+ ศออออออออออออผ
+
+This menu is dedicated for easy setting various command parameters which
+control emulation process.
+
+In this menu you have options for setting {emulator type:emulsel}, various
+kind of {video} and {sound} parameters, parameters which controls {speed} of
+the emulator, emulation of {ZX Interface 1:inter1},
+{Sinclair network:network}, {ZX printer:printer} and {joysticks:joystick},
+various parameters related to contents of Spectrum {ROM}, parameters
+which turn on or off various {testing:test}, and parameters related to the
+{MS Windows:mswindows} compatibility.
+
+.topic inter1
+ ษอออออออออออออออออออออป
+ บ INTERFACE 1 SETTING บ
+ ศอออออออออออออออออออออผ
+
+This option will open {dialog} with one group of {radio buttons:radiobutton},
+one {checkbox:chkbox}, {OK button:okbutton} and {Cancel button:cancelbutton}.
+
+Using radio buttons you can select do you want ZX Interface 1 emulation, and if
+you want, do you want only 8 K paging (this is recommended) or full 16 K paging
+(needs rarely). Using a checkbox, you may force usage of old Interface 1 ROM.
+
+.topic speed
+ ษออออออออออออออออออออออออออป
+ บ SPEED PARAMETERS SETTING บ
+ ศออออออออออออออออออออออออออผ
+
+This option will open {dialog} with a {horizontal scroll bar:hscroll}
+linked with a {input line:inputline}, two {checkboxes:chkbox},
+{OK button:okbutton} and {Cancel button:cancelbutton}.
+
+Input line (or scroll bar) 'Speed in % relative' is used to set relative
+speed of the emulator compared to speed of the real Spectrum. You can directly
+enter numeric value into this input line. Alternatively, you can use scroll
+bar (the best way is using mouse) to set value into this field.
+
+Set checkbox 'Maximal speed mode' if you want to run the emulator on maximum
+possible speed.
+
+Set checkbox 'Maximal loading speed' if you want maximal possible speed of
+loading from emulated tapes which retain full compatibility.
+
+.topic test
+ ษอออออออออออออออออออออออออป
+ บ TEST PARAMETERS SETTING บ
+ ศอออออออออออออออออออออออออผ
+
+{Checkbox:chkbox} 'Test for embeded 8086 code' determines would the emulator
+stops execution (with error message) if special Escape sequences which allows
+patching 80x86 machine code into Z80 code are founded into a Z80 program.
+
+Checkbox 'Test for 128K ports' (only for {48K emulation:emulsel}) allows
+testing does the 48K program use Spectrum 128K I/O ports (for example, to make
+3-channel sound using AY). If you find that some program use 128K ports, it is
+better to run this program on 128K emulator.
+
+{Input line:inputline} 'Quit after' allows setting a time after which the
+emulator will stop working and return to the environment, or directly into
+DOS, depending on checkbox 'with exit to DOS'.
+
+.topic joystick
+ ษอออออออออออออออออออออออออออออป
+ บ JOYSTICK PARAMETERS SETTING บ
+ ศอออออออออออออออออออออออออออออผ
+
+This option will open {dialog} with one group of {checkboxes:chkbox}, four
+{input lines:inputline}, {OK button:okbutton} and {Cancel button:cancelbutton}.
+
+Select type of joystick emulation using checkboxes (or clear all checkboxes if
+you don't want joystick emulation). In a some cases you can set more than one
+checkbox (for example, Kempston emulation using mouse, and Sinclair joystick
+emulation using cursor keys) but there are many combinations which are illegal.
+
+Input lines allows entering of analogue joystick calibration constants (if you
+select manually calibrated analogue joystick).
+
+.topic printer
+ ษออออออออออออออออออออออออออออป
+ บ PRINTER PARAMETERS SETTING บ
+ ศออออออออออออออออออออออออออออผ
+
+This option will open {dialog} with one group of {radio buttons:radiobutton},
+{OK button:okbutton} and {Cancel button:cancelbutton}.
+
+Using radio buttons you can select do you want ZX printer emulation, and if you
+want, which device will be used for emulation.
+
+.topic ROM
+ ษอออออออออออออป
+ บ ROM SETTING บ
+ ศอออออออออออออผ
+
+This option will open {dialog} with some {checkboxes:chkbox},
+{OK button:okbutton} and {Cancel button:cancelbutton}.
+
+Checkbox 'Fast BASIC' determines would the emulator traps on some routines in
+ROM to slightly speed up BASIC programs (this is recommended when you run BASIC
+programs).
+
+Checkbox 'Inverse cursor' determines would the emulator makes change in ROM to
+display inverse cursor (use it only in black/white display mode if cursor is
+important).
+
+Checkbox 'Emulate +2' (only for {128K emulation:emulsel}) determines would the
+emulator emulates ZX Spectrum +2 or ordinary Spectrum 128.
+
+.topic sound
+ ษอออออออออออออออป
+ บ SOUND SETTING บ
+ ศอออออออออออออออผ
+
+This option will open a big {dialog} with {checkboxes:chkbox},
+{OK button:okbutton}, {radio buttons:radiobutton}, {input lines:inputline},
+{OK button:okbutton} and and {Cancel button:cancelbutton}.
+
+Checkbox 'Hear sound' determines would the emulator produce sound or no. Clear
+this checkbox if you want quiet.
+
+Radio buttons 'AY output device' (only for {128K:emulsel} and {Timex:emulsel}
+emulation) determine whether AY will be emulated using PC speaker with
+continual interlaced tone, PC speaker with sampling and adaptive tresholding,
+AdLib compatible card using OPL2 (very old) or OPL 3 chip using FM synthesis,
+or Sound Blaster compatible card using sampling method.
+
+Checkboxes 'AY channels' (only for 128K or Timex emulation) determine which AY
+channels will be emulated when the emulation is performed through PC speaker
+with continual interlaced tone.
+
+Checkboxes 'Mic/Ear device' determine prefered device for emulation of tape
+recorder: {Tape files:tapefiles}, BG Services interface connected on LPT1 port,
+or Sound Blaster card. When the Mic/Ear device is Sound Blaster, AY emulation
+is not possible, because AY emulation may drastically disturb loading process
+through Sound Blaster.
+
+Radio buttons 'Beeper device' determine preferred device for emulation of
+Spectrum beeper. Any devices expect PC speaker are not yet implemented.
+
+Two input lines allows setting of Sound Blaster base address and DMA channel
+for 8-bit transfer (range 0-3). Default values are read from BLASTER variable
+in DOS environment. There is also one linked checkbox. If you mark it, the
+emulator will try to automatically detect Sound Blaster base address, and will
+use DMA channel 1 (most frequent variant).
+
+.topic video
+ ษอออออออออออออออป
+ บ VIDEO SETTING บ
+ ศอออออออออออออออผ
+
+This option will open {dialog} with {radio buttons:radiobutton},
+{input lines:inputline} linked with {horizontal scroll bars:hscroll}, one
+{checkbox:chkbox}, {OK button:okbutton} and {Cancel button:cancelbutton}.
+This dialog dinamically changes itself when some options are turned on or off.
+
+Using one group of radio buttons you can select video card (autodetection is
+recommended). Use CGA modes for running in windowed mode on MS Windows. If you
+have Hercules, you maybe want to try Hercules full screen mode.
+
+Using second group of radio buttons you can select mode of attribute emulations
+on CGA (mono mode), Hercules or EGA Mono graphic cards, or for palette settings
+on CGA card in color mode. In EGA color and VGA mode, this group of radio
+buttons are hidden.
+
+Using third group of radio buttons you can select mode of BORDER emulation:
+Hidden, Standard (asynchronous), and Rainbow (synchronous). The Rainbow
+emulation allows many hires BORDER effects, but works only on VGA card. In
+other modes, 'Rainbow' option is hidden.
+
+Using input line 'Row of screen when picture paints' or using linked horizontal
+scroll bar you may change {video display time:vidtime}. This input line and
+scroll bar are hidden when multicolor emulation is turned on.
+
+Checkbox 'High color resolution' turns on or off multicolor emulation, but it
+is hidden when border emulation is not set to 'Rainbow', or
+{emulator mode:emulsel} is Timex Sinclair 2068.
+
+Input lines 'Extra ULA delay' and 'Start ULA delay' with linked scrollbars
+allow changing of extra ULA delay in T states per one scan line, and additional
+ULA delay in T states per one frame cycle. For more info, read the manual.
+These input lines are hidden when multicolor emulation is turned off.
+
+.topic network
+ ษอออออออออออออออออป
+ บ NETWORK SETTING บ
+ ศอออออออออออออออออผ
+
+This option will open {dialog} with four {input lines:inputline}, Browse
+button, {OK button:okbutton} and {Cancel button:cancelbutton}.
+
+Using 'Network file' input line, you may set name of a interface file for
+Sinclair Network emulation. This input line linked with a 'Browse' button,
+which allows selection of the file using {file selection dialog:fsdialog}.
+
+Input line 'Post sending wait' determines how long (in 18th of secong) the
+sender station will wait after each sent block (to give chance receiving
+station to collect sent package).
+
+Input line 'Free network state autorepeat' determines how long reading from
+the net will return 'Free' state when the interface file is unlocked or
+unchanged, before a next checking is performed.
+
+Input line 'Busy net state autorepeat' determines how long reading from the
+net will return 'Busy' state when the interface file is locked or changed,
+before a next checking is performed.
+
+For full explanation of these complex parameters, see the manual.
+
+.topic emulsel
+ ษออออออออออออออออออป
+ บ EMULATOR SETTING บ
+ ศออออออออออออออออออผ
+
+This option will open {dialog} with one group of {radio buttons:radiobutton},
+{OK button:okbutton} and {Cancel button:cancelbutton}.
+
+Using radio buttons you can select do you want emulation of Spectrum 48K,
+Spectrum 128K or Timex Sinclair 2048 (default is 48K).
+
+This selection is necessary only if you want to {run:runemul} emulator without
+{snapshot:snapfiles} file. If you {select} snapshot file, type of emulation
+will be immidiately determined from the header of snapshot file. If you first
+select snapshot, and then set different type of emulation using this option,
+the emulator will automatically unselect a snapshot, except when the snapshot
+file is 48K snapshot, and you want switching to 128K emulation mode. This can
+be performed without reseting the emulator.
+
+.topic Dos
+ ษออออออออออป
+ บ DOS MENU บ
+ ศออออออออออผ
+
+This menu contains options for displaying short informations {about} program,
+{viewing directory:Dir}, {changing directory:cd},
+{temporary exit to DOS:osshell}, and {quiting:quit}.
+
+.topic Dir
+ ษอออออออออออป
+ บ DIRECTORY บ
+ ศอออออออออออผ
+
+This option calls {file selection dialog:fsdialog} to see all files in the
+current directory.
+
+.topic cd
+ ษออออออออออออออออออป
+ บ CHANGE DIRECTORY บ
+ ศออออออออออออออออออผ
+
+The Change Directory {dialog} box consists of an {input box:inputline}, a
+{list box:listbox}, the standard {OK:okbutton} button, and two other buttons
+(Chdir and Revert).
+
+ ฺ Directory Name ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ
+ ณ                                     ณ
+ ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+
+The Directory Name {input box:inputline} is place where you type in the path of
+the new directory.
+
+ ฺ Directory Tree ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ
+ ณ   Drives                            ณ
+ ณ   ภฤยC:\                            ณ
+ ณ     ภฤยWINDOWS                      ณ
+ ณ       ภฤฤSYSTEM                     ณ
+ ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+
+The Directory Tree list box enables you to move through directories by using
+the selecting bar and pressing Enter.
+
+If you're using the keyboard, press Enter to make the selected directory be the
+current directory, then choose OK or press Esc to exit the dialog box.
+
+The Chdir button changes the current directory once you've selected or typed in
+a directory name.
+
+The Revert button goes back to the previous directory, as long as you haven't
+yet exited the dialog box.
+
+.topic osshell
+ ษออออออออออป
+ บ OS SHELL บ
+ ศออออออออออผ
+
+Temporary leaves the environment and exits to DOS. For return to the environment
+type EXIT.
+
+.topic quit
+ ษออออออป
+ บ QUIT บ
+ ศออออออผ
+
+Leaves the environment and exits to DOS.
+
+.topic about
+ ษอออออออป
+ บ ABOUT บ
+ ศอออออออผ
+
+Displays informations about {Warajevo emulator:abzxtools}.
+
+.topic fsdialog
+ ษอออออออออออออออออออออออป
+ บ FILE SELECTING DIALOG บ
+ ศอออออออออออออออออออออออผ
+
+The file selecting dialog box contains an {input box:inputline}, a
+{file list:FOFiles}, a file information panel, the standard button
+{Cancel:CancelButton}, one other action button ({Open:FOOpenBtn}), plus a
+history list that's attached to the name inputbox.
+
+The Name input box is place where you enter the name of the file to load, or
+the file-name mask to use as a filter for the Files list box (for example,
+*.*).
+
+If you press arrow down, you can select file names previously entered.
+
+.topic FOFiles
+ ษอออออออออออป
+ บ FILE LIST บ
+ ศอออออออออออผ
+
+ ฺ Files ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ
+ ณ                                 ณ
+ ณ  FILENM01.PAS  ณ  FILENM09.PAS  ณ
+ ณ  FILENM02.PAS  ณ  FILENM10.PAS  ณ
+ ณ  FILENM03.PAS  ณ  FILENM11.PAS  ณ
+ ณ  FILENM04.PAS  ณ  FILENM12.PAS  ณ
+ ณ  FILENM05.PAS  ณ  ..            ณ
+ ณ  FILENM06.PAS  ณ  \MOREXAMP     ณ
+ ณ  FILENM07.PAS  ณ  \TOURS        ณ
+ ณ  FILENM08.PAS  ณ  \ANSWERS.DIR  ณ
+ ณ  ฑฑฑþฑฑฑฑฑฑฑฑฑฑฑฑฑฑฑฑฑฑฑฑฑฑ   ณ
+ ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+
+The Files {list box:listbox} lists the names of files in the current directory
+that match the file-name mask in the Name {input box:inputline}, plus the
+parent directory and all subdirectories.
+
+ ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ
+ ณ C:\TP\EXAMPLES\*.PAS                     ณ
+ ณ HELLO.PAS       52  Jul 14,1990  12:00pm ณ
+ ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+
+The File information panel shows the path name, file name, date, time, and size
+of the selected file.
+
+None of the items on this information panel are selectable.
+
+.topic FOOpenBtn
+ ษอออออออออออออป
+ บ OPEN BUTTON บ
+ ศอออออออออออออผ
+
+In the Open a File dialog box, this will open, or create the file.
+
+.topic hotkeys
+ ษอออออออออออออออป
+ บ SHORTCUT KEYS บ
+ ศอออออออออออออออผ
+
+This is a full list of shortcut keys in a environment of {Warajevo:abzxtools}
+Spectrum emulator:
+
+ F1          {Help:nocontext}
+ F2          {Select tape file:tselect}
+ F3          {Edit snapshot memory image:editmeme}
+ F4          {Set sound settings:sound}
+ F5          {Set video settings:video}
+ F6          {Edit database:editbase}
+ F7          {Rename current snapshot:srename}
+ F8          {Select microdrive file:mdvsel}
+ F9          {Unselect snapshot file:sunselect}
+ F10         {Run emulator:runemul}
+
+ Shift + F2  {Set tape parameters:tparameters}
+ Shift + F7  {Select snapshot file:select}
+ Shift + F8  {Set default microdrive:mdvdef}
+ Shift + F10 {Run emulator from data base:dbrun}
+
+ Alt + F2    {View tape contents:view}
+ Alt + F4    {Exit environment:quit}
+ Alt + F5    {Zoom window:wzoom}
+ Alt + T     {Open 'TapeFiles' menu:tfiles}
+ Alt + Z     {Open 'Z80Snaps' menu:snapshots}
+ Alt + M     {Open 'MdriveFiles' menu:microdrive}
+ Alt + C     {Open 'DockFiles' menu:dockfilesmenu}
+ Alt + B     {Open 'DataBase' menu:database}
+ Alt + U     {Open 'Setup' menu:setup}
+ Alt + D     {Open 'Dos' menu:dos}
+ Alt + S     {Activate 'Start' button:sbutton}
+ Alt + X     {Exit environment:quit}
+
+ Ctrl + F4   {Close window:clicon}
+ Ctrl + F5   {Move/resize window:movres}
+ Ctrl + F10  {Main menu:moptions}
+
+.topic runemul
+ ษออออออออออออออป
+ บ RUN EMULATOR บ
+ ศออออออออออออออผ
+
+Pressing F10, click to Emulator field into bottommost screen line, or double
+click to Screen window (if the environment is in graphic mode) will run the
+emulator kernel. If no {snapshot files:SnapFiles} is selected, a 'pure'
+emulator (with empty memory image) will be executed, e.g. you will see after a
+bit time known copyright message:
+
+ (C) 1982 Sinclair Research Ltd
+
+In this case, 48K version of the emulator will be loaded by default. You can
+change this default using option {Emulator:emulsel} into {Setup} menu.
+
+If a snapshot file is selected, this file will be immediately loaded into the
+emulator after executing, so selected snapshot file will be run. Emulator type
+(48K, 128K or Timex) will be determined from {snapshot's header:sinfo}. Main
+file {window} always display which emulator file will be used.
+
+All selected {setup parameters:setup} will be passed into the emulator.
+Eventually selected {tape file:TapeFiles} with assigned
+{tape parameters:tparameters} and microdrive {cartridge files:cartfiles} will
+be passed into the emulator too.
+
+After entering to the emulator kernel, you may use following function keys:
+
+ F1   Keyboard and fkeys help
+ F2   Tape selections
+ F3   Calls built-in monitor
+ F4   Sound emulation On/Off
+ F5   Multifunctional video key
+ F6   Border emulation On/Off/Hcr
+ F7   Save snapshot file as SNAP.Z80
+ F8   Performs a NMI
+ F9   Reset the emulator
+ F10  Calls the environment
+
+Ctrl + F10, Shift + F10 or Alt+F4 exits directly to DOS, without calling the
+environment. For more information, press F1 after entering the emulator.
+
+If you call the environment from the emulator, temporary memory image will be
+saved into file TEMP.Z80 and configuration will be saved into file SPECSIM.CFG.
+File TEMP.Z80 will be active snapshot file. So if you don't change active
+snapshot file when you are in the environment, after calling back emulator,
+interrupted program will be normally continued.
+
+.topic cartfiles
+ ษออออออออออออออออออออออออออออป
+ บ MICRODRIVE CARTRIDGE FILES บ
+ ศออออออออออออออออออออออออออออผ
+
+Cartridge files are used for emulation of cartridge tape in real {microdrive}.
+Cartridge file is sequential data file with records called {sectors} which are
+corespodent to sectors on a real cartridge. One sector is 543 bytes long. One
+cartridge file may have from 9 to 254 sectors.
+
+If cartridge file length is not divisible by 543, extra bytes will be ignored.
+
+.topic movres
+ ษอออออออออออออออออออออออออออออป
+ บ MOVING AND RESIZING WINDOWS บ
+ ศอออออออออออออออออออออออออออออผ
+
+Pressing the mouse button when the mouse pointer is on the top frame of the
+{window} will change the frame shape, and while you hold the mouse button, you
+can move the window to new position. If you have no mouse, you can move the
+window by pressing Ctrl+F5, then using the arrow keys. Press Enter when you
+finished.
+
+Pressing the mouse button when the mouse pointer is on the resize corner of the
+window will start resizing. While you hold the mouse button, you can move the
+mouse pointer to define the new dimension. If you have no mouse, you can resize
+the window pressing Ctrl+F5, then move it using shifted arrow keys. Press Enter
+when you finished.
+
+.topic chkbox
+ ษออออออออออป
+ บ CHECKBOX บ
+ ศออออออออออผ
+
+Checkboxes are used for selecting some options, when more than one option may
+be active at the same time, in contrast to {radio buttons:radiobutton}.
+
+ [X] Option 1
+ [X] Option 2
+ [ ] Option 3
+ [X] Option 4
+
+Options 1, 2 and 4 are active, and option 3 is inactive.
+
+You can select any of these options using arrow keys (or by pressing the Alt
+key with the highlighted letter). Then, you can activate/deactivate using Space
+key. Also, you can use mouse instead.
+
+.topic talgs
+ ษออออออออออออออออออออออป
+ บ TAPE LOADING METHODS บ
+ ศออออออออออออออออออออออผ
+
+You have three algorythm for emulation of a real tapes using a
+{tape files:TapeFiles}. Default algorithm is AUTO, you can select SLOW or FAST
+for some special purposes. For more details see the manual.
+
+ FAST
+ ----
+
+In this mode emulator will recognize only programs which use original loading
+routine from the ROM. Loading will always be very fast, but programs with
+non-standard loading routines will not work.
+
+ SLOW
+ ----
+
+In this mode emulator will recognize many programs which use non-standard
+loading methods, but loading is like on real Spectrum (but slightly faster,
+depending of computer speed). Normally saved programs will be treated on same
+way, so loading will be always slow.
+
+ AUTO
+ ----
+
+In this mode emulator tries to determine would the program use standard ROM
+loading routine (in such case loading will be fast), or non-standard routine
+(in such case loading will be slow). This is default and recommended method.
+
+.topic baudrate
+ ษออออออออออออป
+ บ BAUD RATES บ
+ ศออออออออออออผ
+
+Baud rate determines effective speed while transferring programs using
+{cassette interface:commcinf} or {RS232 interface:commrs232}. Roughly spoken,
+one baud (1 Bd) is equal to one bit per second (1 bit/s or 1 Bps).
+
+With cassette transfer, baud rates can be defined only as average value,
+because tape signal is frequency modulated (FM). More precisely, this is
+digital frequency shift keying (FSK) signal if you are expert for
+telecomunications. Default average baud rate is 1500 Bd (2000 Bd for zero bits
+and 1000 Bd for one bits), which means about 11 KB per minute in average.
+
+When you transfer normally saved (unprotected) programs, keep this baud rate to
+1500 Bd. Eventually, if your cassette player don't work so good, and you have
+loading problems, try about 1400 Bd if your casette player is too slow, or
+about 1600 Bd if it is too fast.
+
+There are also many protected programs (known as speedlock programs) which use
+non-standard tape loading routines with higher baud rate. This baud rate is
+usually from 2000 to 3000 Bd, rarely higher. To transfer such programs you must
+firstly determine baud rate by experimenting. Start from higher to lower baud
+rates. For example, start with 3500 Bd, then successively decrease baud rate in
+about 100 Bd increments (e.g. 3400, 3300 etd.) until you load protected block
+correctly. This will always help if loader is not totally non-standard (e.g.
+with variable baud rate like in original 'Skool daze' or with more sync pulses
+like in 'Robocop'). In this case, you must use option
+{Sample from cassette:casssample}.
+
+If you are hacker or if you have knowledge about machine language, you can try
+to read protected loader using our internal monitor, and instead of determining
+baud rate, you can directly read time constants from the loader and set them
+using {Advanced cassette settings:advcassetting} option. This is the best
+method, and finding time constants is not a hard job using our monitor. Read
+the manual for details.
+
+With RS232 transfer supported baud rates are 110, 150, 300, 600, 1200, 2400,
+4800 and 9600 Bd. Default is 9600 Bd which means about 70 KB per minute.
+Transfer is very reliable, so change this only if you have problems during
+transfering.
+
+.topic sectors
+ ษอออออออออป
+ บ SECTORS บ
+ ศอออออออออผ
+
+Sectors are records on a {cartridge file:cartfiles} which are used to emulate
+real sectors on real cartridge file. One sector is 543 byte long.
+
+On real {microdrive}, one sector has two parts: {sector header:sheader}, and
+{sector block:sblock}. Between header and block, and also between two sectors
+there is a little {gap}.
+
+Emulated sector has following format:
+
+   1 byte header flag (always 1)
+   1 byte sector number
+   2 bytes unused
+  10 bytes cartridge name
+   1 byte header check sum
+   1 byte {block flag:bflag}
+   1 byte {record number:recnum}
+   2 byte {record length:reclen}
+  10 byte file name
+   1 byte descriptor check sum
+ 255 bytes actual data
+   1 byte actual data check sum
+
+Using {View:mdvview} option in {Microdrives submenu:microsub} you can view
+system informations about each sector on the cartridge.
+
+.topic sheader
+ ษอออออออออออออออป
+ บ SECTOR HEADER บ
+ ศอออออออออออออออผ
+
+Header of the {sector:sectors} is only a signature that mark beginning of each
+sector on real cartridge tape. The format of a header is:
+
+ 12 bytes of lead-in signal
+  1 byte header flag (always 1)
+  1 byte sector number
+  2 bytes unused
+ 10 bytes cartridge name
+  1 byte check sum (using modulo 255)
+
+Lead-in signal (10 zeros and two #FF's) on real microdrive has only
+synchronising purpose, so we do not put it in a {cartridge file:cartfiles}.
+So, our header is 15 bytes long, not 27 bytes.
+
+.topic sblock
+ ษออออออออออออออป
+ บ SECTOR BLOCK บ
+ ศออออออออออออออผ
+
+Block of the {sector:sectors} contains actual data. The first part of the block
+contains block descriptor, which structure is similar like
+{sector header:sheader}:
+
+ 12 butes of lead-in signal
+  1 byte {block flag:bflag}
+  1 byte {record number:recnum}
+  2 byte {record length:reclen}
+ 10 byte file name
+  1 byte check sum (using modulo 255)
+
+After this, follows 512 bytes of actual data, and actual data checksum using
+modulo 255 too (not 256)!
+
+Lead-in signal (10 zeros and two #FF's) on real microdrive has only
+synchronizing purpose, so we do not put it in a {cartridge file:cartfiles}.
+So, our block is 528 bytes long, not 540 bytes.
+
+First 9 bytes of actual data in zero record of non-PRINT
+{logical file:logfiles} contain additional informations about file such a type
+(BASIC, CODE, DATA), start address of loading, etc. See manual for detail
+description.
+
+.topic bflag
+ ษออออออออออออป
+ บ BLOCK FLAG บ
+ ศออออออออออออผ
+
+In a block flag bit b0 is always 0 to say that this is a {sector block:sblock},
+not a {sector header:sheader}. Of course, this is important only at real
+cartridge tape.
+
+Bit b1 is one if this block is EOF block, e.g. last block which belongs to one
+{logical file:logfiles}. If block is not a EOF block, {record length:reclen}
+must be 512.
+
+Bit b2 is one if this block belongs a non-PRINT file, e.g. file created using
+SAVE* command.
+
+Bits b3-b7 are always zero (not used).
+
+.topic recnum
+ ษอออออออออออออออป
+ บ RECORD NUMBER บ
+ ศอออออออออออออออผ
+
+Each {logical file:logfiles} can occupy more than one {sector:sectors} (sectors
+contain only 512 bytes of actual data). So, logical file must be divided to 512
+byte long records. Field record number contains logical record number, starting
+from zero. Last record is EOF record, so it must has b1=1 in a
+{block flag:bflag}.
+
+If record is not a EOF record, {record length:reclen} must be 512.
+
+First 9 bytes in zero record of a non-PRINT file contains
+{additional informations:sblock} about file.
+
+.topic reclen
+ ษอออออออออออออออป
+ บ RECORD LENGTH บ
+ ศอออออออออออออออผ
+
+Record length contains actual length of data in a {record:recnum} of one
+{logical file:logfiles}. If record is not a EOF record, record length must be
+512.
+
+Unallocated and bad blocks both have zero record length. Unallocated blocks
+have {EOF bit:bflag} equal zero, but bad blocks have EOF bit equal one.
+
+.topic gap
+ ษอออออป
+ บ GAP บ
+ ศอออออผ
+
+Gap is a piece on a real cartridge tape with no data on it (nor zeros nor
+ones). {Unformated:mdvformat} cartridge has only gaps.
+
+In {Warajevo emulator:abzxtools} each {sector:sectors} with wrong header
+checksum will be treated as gap. This is not enough for correct emulation,
+because there must be some gaps between sectors and between
+{sector header:sheader} and {sector block:sblock}. So, emulator inserts some
+dummy gaps at appropriate places when ZX software tries to read ZX Interface 1
+status register (IN 239).
+
+Logical structure of a sector can be adjusted using {Verify:mdvsverify} option
+in {Sectors submenu:mdvsectors}.
+
+.topic logfiles
+ ษอออออออออออออออป
+ บ LOGICAL FILES บ
+ ศอออออออออออออออผ
+
+On a real cartridge tape, you can put many files on it. But we emulated
+cartridge tape using only one {cartridge file:cartfiles}. So, we can say that
+one cartridge file may have many logical files on it. You can see list of a
+logical files on cartridge using CAT command from BASIC, or using
+{Catalog:mdvcat} option from {Microdrives:microsub} submenu.
+
+Logical file can be PRINT file and non-PRINT file. PRINT files are files
+created using PRINT# command in BASIC. Non-PRINT files are created using SAVE*
+command.
+
+Each {logical file:logfiles} can occupy more than one {sector:sectors} (sectors
+contain only 512 bytes of actual data). So, logical files must be divided to
+512 byte long {records:recnum}.
+
+.topic vidtime
+ ษออออออออออออออออออออป
+ บ VIDEO DISPLAY TIME บ
+ ศออออออออออออออออออออผ
+
+Try changing of this parameter (in range 0-311) if some sprites on screen
+flicker too much (for example, when you play some game).
+
+This parametar determines relative delay between vertical screen retrace (which
+is synchronized with Spectrum interrupt) and video updating. Default is 150,
+which means 'update screen nearly in a middle time between two interrupts'.
+
+.topic sbutton
+ ษออออออออออออออป
+ บ START BUTTON บ
+ ศออออออออออออออผ
+
+'Start' button is located in the bottom left corner of the screen, like
+in Windows 95. It may be activated using mouse or using {Alt+S:hotkeys}. This
+button makes easier {running:runemul} of Spectrum programs, not only programs
+in {Warajevo:abzxtools} format ({TAP:tapefiles} or {Z80:snapshots}), but also
+programs in formats of {other emulators:other} ({SNA:warajppm},
+{BLK:spec200wara}, {SNP:warasnpm} etc.), and even programs which are archived
+in ZIP archives.
+
+After activating of the 'Start' button, a {file selection dialog:fsdialog}
+will appear.
+
+If you select a Warajevo file (TAP, Z80, MDR, DCK), it will be passed to the
+emulator, and started (in case of TAP files a first program in the tape will
+be started, in case of MDR files {program:logfiles} stored on the
+{cartridge:cartfiles} with name "run" will be started, and in case of
+{DCK files:dockfiles} DCK file will be loaded, but started only if DCK file
+contains auto-boot programs like LROS or AROS programs).
+
+If you select file which is not in Warajevo format (for example, SNA,
+{SP:spwaram}, BLK, SNP, {TZX:tzxwara}, {LTP:garabikwara}, {SIT:warasitmm}
+etc.), the environment will perform automatic conversion in Warajevo file
+TEMP.Z80 or TEMP.TAP (depending on whether selected file is snapshot or tape
+file), passes converted file to the emulator, and start it (all these things
+will take very little time, practically immediately, except with very complex
+formats, like TZX which may take slightly longer time).
+
+If you select a file with extension .ZIP (archived file), the emulator
+will create a temporary directory called ZIPRUN, erases it content if it was
+previously created, and then, by calling program PKUNZIP.EXE (which must be
+located in currently active path set using DOS command PATH) unpacks archive
+in this directory. After unpacking, if the archive contains only one file,
+then the emulator will deal with this file like in previous case. But, if the
+archive contains more files, a new dialog appears which allows user to select
+file which will be started (using previously described algorithm).
+
+This is a list of formats currently supported by Start Button:
+Z80, TAP (Lunter), TAP (Warajevo), BLK, SPC, LTP, TZX, ZXS (Museum),
+ZXS (ZX32), ZXT (ZX32), VOC, SLT, SNA (48), SNA (128), SP (VGASPEC),
+SP (Spec 0.99), PRG, SEM, SIT, SNP, SCR, MDR, DCK and ZIP.
+
+.topic dockfilesmenu
+ ษออออออออออออออออป
+ บ DOCKFILES MENU บ
+ ศออออออออออออออออผ
+
+This menu is dedicated for manipulations with {dock files:dockfiles}. In
+this menu you have submenues for {basic manipulations:docks} with dock files,
+and for {converting:dockconvert} various independent formats into DCK file
+format.
+
+.topic docks
+ ษอออออออออออออออป
+ บ DOCKS SUBMENU บ
+ ศอออออออออออออออผ
+
+In this submenu there are options for {selecting:dockselect},
+{unselecting:dockunselect}, {viewing:dockview} and {merging:dockmerge} of
+{dock files:dockfiles}.
+
+.topic dockselect
+ ษอออออออออออออป
+ บ SELECT DOCK บ
+ ศอออออออออออออผ
+
+Selects the current {dock file:dockfiles}. All operations in
+{DockFiles:dockfilesmenu} menu will be related to it.
+
+This option calls {file selecting dialog:fsdialog} to select the file name.
+
+.topic dockunselect
+ ษอออออออออออออออป
+ บ UNSELECT DOCK บ
+ ศอออออออออออออออผ
+
+Cancels {selection:dockselect} of the {dock file:DockFiles}.
+
+.topic dockview
+ ษอออออออออออป
+ บ VIEW DOCK บ
+ ศอออออออออออผ
+
+This option opens a {listbox} which show informations about current
+{DOCK file:dockfiles}, like bank ID number, status of each chunk in the bank,
+etc.
+
+.topic dockmerge
+ ษออออออออออออป
+ บ MERGE DOCK บ
+ ศออออออออออออผ
+
+This option allows merging of one {DOCK file:dockfiles} to another. Using a
+{file selection dialog:fsdialog} enter name of a DCK file which will be merged
+with current DCK file. This is possible only if two DOCK files does not
+use the same memory space.
+
+This option is equivalent to making cartridge on real Timex which have
+everything stored in another two cartridges which do not use the same memory
+chunks (one LROS and one AROS for example, or one program in DOCK and second
+in EXROM bank, etc.).
+
+.topic dockconvert
+ ษอออออออออออออออออออออออป
+ บ CONVERT DOCKS SUBMENU บ
+ ศอออออออออออออออออออออออผ
+
+This menu is dedicated for conversion of {LROS:binlros} and {AROS:binaros}
+programs which you have in form of binary cartridge dump on the disk (way how
+you got such file is not important) into a valid DCK file usable in
+{Warajevo:abzxtools} emulator. Also conversion from {ROM to DCK:romtodck} is
+supported, to allow making DCK files as replacement for Timex ROM.
+
+.topic romtodck
+ ษออออออออออออป
+ บ ROM TO DCK บ
+ ศออออออออออออผ
+
+Using {file selection dialog:fsdialog} enter name of source ROM file (16 Kb
+long), and destination {DCK file:dockfiles}.
+
+This option will make such DCK file which will be loaded into HOME bank, so
+such DCK file may replace standard Timex HOME ROM. For example, if you convert
+ZX48.ROM into TS2048.DCK and {select:dockselect} TS2048.DCK file for active
+DCK file, you will achieve Timex Sinclair 2048 emulation!
+
+.topic binlros
+ ษออออออออออออออออป
+ บ BINARY TO LROS บ
+ ศออออออออออออออออผ
+
+Using {file selection dialog:fsdialog} enter name of source
+{binary file:dockconvert}, and destination {DCK file:dockfiles}.
+
+This option assumes that source file is dump of some LROS program (mapped at
+address 0 in DOCK bank). If length of source file is not divisible by 8192,
+converted file will be filled up with zeros to appropriate length.
+
+Source file in fact need not to be real LROS (with five byte LROS header at
+address 0), the only important thing is that converted file will be mapped at
+address 0 in DOCK bank. For example, if you convert ZX48.ROM into SPECEMU.DCK
+using this option, you will get DCK file which emulates well-known Spectrum
+emulator cartridge for Timex computer (Spectrum emulator which must be started
+with OUT 244,3 - Timex users know what is this).
+
+.topic binaros
+ ษออออออออออออออออป
+ บ BINARY TO AROS บ
+ ศออออออออออออออออผ
+
+Using {file selection dialog:fsdialog} enter name of source
+{binary file:dockconvert}, and destination {DCK file:dockfiles}.
+
+This option assumes that source file is dump of some AROS program (mapped at
+address 32768 in DOCK bank). If length of source file is not divisible by
+8192, converted file will be filled up with zeros to appropriate length.
+
+.topic mswindows
+ ษออออออออออออออออออออออออออป
+ บ MS WINDOWS COMPATIBILITY บ
+ ศออออออออออออออออออออออออออผ
+
+{Checkbox:chkbox} 'Test for virtual 386 mode' determines would the emulator
+show warning message when the processor is in 'virtual' mode. Clear this
+checkbox if you work under MS Windows (but working under DOS is much more
+reliable). Next two options will work only when this checkbox is clear!
+
+Checkbox 'Install task switch handler' enables installing a handler which
+tries to repaint screen content when in multitasking environment a task
+switch using Alt+Tab from some other program to the emulator is performed. If
+this handler does not work correctly on your computer, switch off this
+checkbox. And if it works correctly, keep it on. For more information, see
+the manual.
+
+Checkbox 'Prevent access to printer' determines would the emulator prevent
+any access to the printer. Namely, any access to the printer when it is not
+ready will cause error message under MS Windows, and this may quite fool the
+emulator. So, if you want to protect the emulator against such occurrences,
+switch on this checkbox.
+
+.topic dockfiles
+ ษออออออออออออป
+ บ DOCK FILES บ
+ ศออออออออออออผ
+
+{Warajevo emulator:abzxtools} introduces special DCK files which keep content
+and configuration of additional Timex Sinclair 2068 memory banks (DOCK and
+EXROM), so DCK files allow emulation of various ROM/RAM expansions, LROS and
+AROS programs, etc. Content of these banks are not keep into
+{snapshot files:snapfiles}, due to more flexibility (such organization allows
+running the same snapshot in different Timex configurations).
