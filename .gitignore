@@ -1,0 +1,14 @@
+# Local build output
+build/
+dist/
+*.obj
+*.map
+*.lst
+*.bak
+*.tmp
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
